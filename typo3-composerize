@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+
+<?php
+
+require __DIR__ . '/../../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use B13\Typo3Composerize\Command\CheckIntegrityCommand;
+use B13\Typo3Composerize\Command\CreateComposerCommand;
+
+$application = new Application();
+$application->add(new CheckIntegrityCommand());
+$application->add(new CreateComposerCommand());
+$application->run();

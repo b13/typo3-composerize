@@ -1,0 +1,24 @@
+{
+    "name": "b13/typo3-composerize",
+    "description": "Prepare TYPO3 extensions for composer",
+    "license": "GPL-2.0-or-later",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jochen Roth - B13",
+            "email": "jochen.roth@b13.com"
+        }
+    ],
+    "bin": [
+        "typo3-composerize"
+    ],
+    "extra": {},
+    "autoload": {
+        "psr-4": {
+            "B13\\Typo3Composerize\\": "Classes"
+        }
+    },
+    "require": {
+        "symfony/console": "^5.2"
+    }
+}
