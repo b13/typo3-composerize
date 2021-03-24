@@ -1,0 +1,2576 @@
+{
+  "meta": null,
+  "data": {
+    "gridelements": {
+      "composer_name": "gridelementsteam\/gridelements"
+    },
+    "news": {
+      "composer_name": "georgringer\/news"
+    },
+    "extension_builder": {
+      "composer_name": "friendsoftypo3\/extension-builder"
+    },
+    "scheduler_timeline": {
+      "composer_name": "aoe\/scheduler_timeline"
+    },
+    "ns_sharethis": {
+      "composer_name": "nitsan\/ns-sharethis"
+    },
+    "dlf": {
+      "composer_name": "kitodo\/presentation"
+    },
+    "checkmysite": {
+      "composer_name": "jweiland\/checkmysite"
+    },
+    "ceselector": {
+      "composer_name": "mmc\/ceselector"
+    },
+    "recordsmanager": {
+      "composer_name": "apen\/recordsmanager"
+    },
+    "format_t3tools": {
+      "composer_name": "formatsoft\/format_t3tools"
+    },
+    "jpfaq": {
+      "composer_name": "jvdp\/jpfaq"
+    },
+    "org": {
+      "composer_name": "netzmacher\/org"
+    },
+    "th_rating": {
+      "composer_name": "thucke\/th-rating"
+    },
+    "svconnector_feed": {
+      "composer_name": "cobweb\/svconnector_feed"
+    },
+    "svconnector_sql": {
+      "composer_name": "cobweb\/svconnector_sql"
+    },
+    "ke_search": {
+      "composer_name": "teaminmedias-pluswerk\/ke_search"
+    },
+    "generic_gallery": {
+      "composer_name": "felixnagel\/generic-gallery"
+    },
+    "tsconf": {
+      "composer_name": "netzmacher\/tsconf"
+    },
+    "pagenotfoundhandling": {
+      "composer_name": "aaw-team\/pagenotfoundhandling"
+    },
+    "html5videoplayer": {
+      "composer_name": "lochmueller\/html5videoplayer"
+    },
+    "aoe_dbsequenzer": {
+      "composer_name": "aoe\/aoe-dbsequenzer"
+    },
+    "tika": {
+      "composer_name": "apache-solr-for-typo3\/tika"
+    },
+    "additional_reports": {
+      "composer_name": "apen\/additional_reports"
+    },
+    "sav_library_mvc": {
+      "composer_name": "yolftypo3\/sav-library-mvc"
+    },
+    "image_autoresize": {
+      "composer_name": "causal\/image_autoresize"
+    },
+    "shyguy": {
+      "composer_name": "wapplersystems\/shyguy"
+    },
+    "quick_shop": {
+      "composer_name": "netzmacher\/quickshop"
+    },
+    "multicolumn": {
+      "composer_name": "ichhabrecht\/multicolumn"
+    },
+    "sav_library_kickstarter": {
+      "composer_name": "yolftypo3\/sav-library-kickstarter"
+    },
+    "imagewidthspecificationwizard": {
+      "composer_name": "webit-de\/imagewidthspecificationwizard"
+    },
+    "fh_debug": {
+      "composer_name": "jambagecom\/fh-debug"
+    },
+    "import": {
+      "composer_name": "jambagecom\/import"
+    },
+    "patch10011": {
+      "composer_name": "jambagecom\/patch10011"
+    },
+    "groupdelegation": {
+      "composer_name": "in2code\/groupdelegation"
+    },
+    "examples": {
+      "composer_name": "t3docs\/examples"
+    },
+    "enetcache": {
+      "composer_name": "lolli\/enetcache"
+    },
+    "imagecycle": {
+      "composer_name": "typo3-extension\/imagecycle"
+    },
+    "beautyofcode": {
+      "composer_name": "felixnagel\/beautyofcode"
+    },
+    "tsparser": {
+      "composer_name": "jambagecom\/tsparser"
+    },
+    "me_google_calendar": {
+      "composer_name": "mediaessenz\/me-google-calendar"
+    },
+    "transactor": {
+      "composer_name": "jambagecom\/transactor"
+    },
+    "be_secure_pw": {
+      "composer_name": "spooner-web\/be_secure_pw"
+    },
+    "datamints_feuser": {
+      "composer_name": "datamints\/feuser"
+    },
+    "sh_scoutnet_kalender": {
+      "composer_name": "scoutnet\/sh-scoutnet-kalender"
+    },
+    "sh_scoutnet_webservice": {
+      "composer_name": "scoutnet\/sh-scoutnet-webservice"
+    },
+    "direct_mail_userfunc": {
+      "composer_name": "causal\/direct_mail_userfunc"
+    },
+    "solr": {
+      "composer_name": "apache-solr-for-typo3\/solr"
+    },
+    "timelog": {
+      "composer_name": "buepro\/typo3-timelog"
+    },
+    "typoscript2ce": {
+      "composer_name": "in2code\/typoscript2ce"
+    },
+    "dd_googlesitemap": {
+      "composer_name": "dmitryd\/typo3-dd-googlesitemap"
+    },
+    "slub_entityfacts": {
+      "composer_name": "slub\/slub-entityfacts"
+    },
+    "content_replacer": {
+      "composer_name": "sgalinski\/content-replacer"
+    },
+    "externalimport_tut": {
+      "composer_name": "cobweb\/externalimport_tut"
+    },
+    "svconnector_csv": {
+      "composer_name": "cobweb\/svconnector_csv"
+    },
+    "addons_tt_products": {
+      "composer_name": "jambagecom\/addons-tt-products"
+    },
+    "tcpdf": {
+      "composer_name": "extcode\/tcpdf"
+    },
+    "beuser_iprange": {
+      "composer_name": "mfc\/beuser_iprange"
+    },
+    "powermail_cond": {
+      "composer_name": "in2code\/powermail_cond"
+    },
+    "lock_element": {
+      "composer_name": "simonschaufi\/lock-element"
+    },
+    "gh_randomcontent": {
+      "composer_name": "amazing\/gh-randomcontent"
+    },
+    "powermail": {
+      "composer_name": "in2code\/powermail"
+    },
+    "div2007": {
+      "composer_name": "jambagecom\/div2007"
+    },
+    "ns_lazy_load": {
+      "composer_name": "nitsan\/ns-lazy-load"
+    },
+    "ig_ldap_sso_auth": {
+      "composer_name": "causal\/ig_ldap_sso_auth"
+    },
+    "seo_dynamic_tag": {
+      "composer_name": "netzmacher\/seo_dynamic_tag"
+    },
+    "seo_basics": {
+      "composer_name": "b13\/seo_basics"
+    },
+    "voucher": {
+      "composer_name": "jambagecom\/voucher"
+    },
+    "typoscript_code": {
+      "composer_name": "itribe\/typoscript-code"
+    },
+    "scriptmerger": {
+      "composer_name": "sgalinski\/scriptmerger"
+    },
+    "l10nmgr": {
+      "composer_name": "localizationteam\/l10nmgr"
+    },
+    "commerce": {
+      "composer_name": "commerceteam\/commerce"
+    },
+    "cachemgm": {
+      "composer_name": "aoepeople\/cachemgm"
+    },
+    "cooluri": {
+      "composer_name": "bednee\/cooluri"
+    },
+    "debug_mysql_db": {
+      "composer_name": "geithware\/debug-mysql-db"
+    },
+    "rtehtmlarea": {
+      "composer_name": "friendsoftypo3\/rtehtmlarea"
+    },
+    "file_list": {
+      "composer_name": "causal\/file_list"
+    },
+    "timezones": {
+      "composer_name": "thucke\/timezones"
+    },
+    "gkh_rss_import": {
+      "composer_name": "gkh\/gkh-rss-import"
+    },
+    "wizard_crpagetree": {
+      "composer_name": "reelworx\/wizard_crpagetree"
+    },
+    "watchwords": {
+      "composer_name": "jambagecom\/watchwords"
+    },
+    "ve_guestbook": {
+      "composer_name": "simonschaufi\/ve_guestbook"
+    },
+    "tt_products": {
+      "composer_name": "jambagecom\/tt-products"
+    },
+    "tscobj": {
+      "composer_name": "causal\/tscobj"
+    },
+    "table": {
+      "composer_name": "jambagecom\/table"
+    },
+    "static_info_tables_it": {
+      "composer_name": "jambagecom\/static-info-tables-it"
+    },
+    "static_info_tables_es": {
+      "composer_name": "jambagecom\/static-info-tables-es"
+    },
+    "static_info_tables_de": {
+      "composer_name": "jambagecom\/static-info-tables-de"
+    },
+    "static_info_tables_da": {
+      "composer_name": "jambagecom\/static-info-tables-da"
+    },
+    "static_info_tables": {
+      "composer_name": "sjbr\/static-info-tables"
+    },
+    "sr_language_menu": {
+      "composer_name": "sjbr\/sr-language-menu"
+    },
+    "sr_freecap": {
+      "composer_name": "sjbr\/sr-freecap"
+    },
+    "sr_feuser_register": {
+      "composer_name": "sjbr\/sr-feuser-register"
+    },
+    "sr_email_subscribe": {
+      "composer_name": "sjbr\/sr-email-subscribe"
+    },
+    "sf_books": {
+      "composer_name": "evoweb\/sf-books"
+    },
+    "rlmp_language_detection": {
+      "composer_name": "rlmp\/rlmp-language-detection"
+    },
+    "realurl": {
+      "composer_name": "dmitryd\/typo3-realurl"
+    },
+    "phpmyadmin": {
+      "composer_name": "mehrwert\/phpmyadmin"
+    },
+    "mw_keywordlist": {
+      "composer_name": "mehrwert\/ext-mw_keywordlist"
+    },
+    "mbi_products_categories": {
+      "composer_name": "jambagecom\/mbi-products-categories"
+    },
+    "macina_searchbox": {
+      "composer_name": "jambagecom\/macina-searchbox"
+    },
+    "macina_banners": {
+      "composer_name": "simonschaufi\/macina-banners"
+    },
+    "lfeditor": {
+      "composer_name": "sgalinski\/lfeditor"
+    },
+    "fetchurl": {
+      "composer_name": "in2code\/fetchurl"
+    },
+    "faq": {
+      "composer_name": "lochmueller\/faq"
+    },
+    "tt_board": {
+      "composer_name": "jambagecom\/tt-board"
+    },
+    "direct_mail": {
+      "composer_name": "directmailteam\/direct-mail"
+    },
+    "direct_mail_subscription": {
+      "composer_name": "directmailteam\/direct-mail-subscription"
+    },
+    "crawler": {
+      "composer_name": "aoepeople\/crawler"
+    },
+    "jfmulticontent": {
+      "composer_name": "jambagecom\/jfmulticontent"
+    },
+    "cc_magicpw": {
+      "composer_name": "colorcube\/cc-magicpw"
+    },
+    "cc_feinfo": {
+      "composer_name": "colorcube\/cc-feinfo"
+    },
+    "wec_map": {
+      "composer_name": "jbartels\/wec-map"
+    },
+    "perfectlightbox": {
+      "composer_name": "lochmueller\/perfectlightbox"
+    },
+    "be_acl": {
+      "composer_name": "p2media\/be-acl"
+    },
+    "caretaker": {
+      "composer_name": "caretaker\/caretaker"
+    },
+    "caretaker_instance": {
+      "composer_name": "caretaker\/caretaker_instance"
+    },
+    "taxajax": {
+      "composer_name": "jambagecom\/taxajax"
+    },
+    "static_info_tables_taxes": {
+      "composer_name": "jambagecom\/static-info-tables-taxes"
+    },
+    "external_import": {
+      "composer_name": "cobweb\/external_import"
+    },
+    "svconnector": {
+      "composer_name": "cobweb\/svconnector"
+    },
+    "foundation_zurb_framework": {
+      "composer_name": "karavas\/foundation-zurb-framework"
+    },
+    "tt_news": {
+      "composer_name": "rupertgermann\/tt_news"
+    },
+    "tt_guest": {
+      "composer_name": "jambagecom\/tt-guest"
+    },
+    "tt_address": {
+      "composer_name": "friendsoftypo3\/tt-address"
+    },
+    "cobj_xpath": {
+      "composer_name": "digicademy\/cobj_xpath"
+    },
+    "dce": {
+      "composer_name": "t3\/dce"
+    },
+    "mailfiles": {
+      "composer_name": "felixnagel\/mailfiles"
+    },
+    "pluploadfe": {
+      "composer_name": "felixnagel\/pluploadfe"
+    },
+    "deletefiles": {
+      "composer_name": "felixnagel\/deletefiles"
+    },
+    "df_tabs": {
+      "composer_name": "sgalinski\/df-tabs"
+    },
+    "df_contentslide": {
+      "composer_name": "sgalinski\/df-contentslide"
+    },
+    "additional_scheduler": {
+      "composer_name": "apen\/additional_scheduler"
+    },
+    "privacyguard": {
+      "composer_name": "felixnagel\/privacyguard"
+    },
+    "cobj_xslt": {
+      "composer_name": "digicademy\/cobj_xslt"
+    },
+    "ke_search_hooks": {
+      "composer_name": "teaminmedias-pluswerk\/ke_search_hooks"
+    },
+    "secure_downloads": {
+      "composer_name": "leuchtfeuer\/secure-downloads"
+    },
+    "randomdata": {
+      "composer_name": "windinternet\/randomdata"
+    },
+    "launchstart": {
+      "composer_name": "netzmacher\/launchstart"
+    },
+    "sf_register": {
+      "composer_name": "evoweb\/sf-register"
+    },
+    "restdoc": {
+      "composer_name": "causal\/restdoc"
+    },
+    "versatile_crawler": {
+      "composer_name": "webcoast\/versatile-crawler"
+    },
+    "flat_urls": {
+      "composer_name": "pagemachine\/typo3-flat-urls"
+    },
+    "pagetitle_ts": {
+      "composer_name": "undkonsorten\/typo3-pagetitle-ts"
+    },
+    "svg_sanitizer": {
+      "composer_name": "t3g\/svg-sanitizer"
+    },
+    "cloudflare": {
+      "composer_name": "causal\/cloudflare"
+    },
+    "booking": {
+      "composer_name": "wsr\/booking"
+    },
+    "akamai": {
+      "composer_name": "b13\/akamai"
+    },
+    "sf_yubikey": {
+      "composer_name": "derhansen\/sf_yubikey"
+    },
+    "newsletter": {
+      "composer_name": "ecodev\/newsletter"
+    },
+    "tinyurls": {
+      "composer_name": "de-swebhosting-typo3-extension\/tinyurls"
+    },
+    "sav_library_plus": {
+      "composer_name": "yolftypo3\/sav-library-plus"
+    },
+    "static_info_tables_sr": {
+      "composer_name": "leuchtfeuer\/static-info-tables-sr"
+    },
+    "ws_flexslider": {
+      "composer_name": "svewap\/ws-flexslider"
+    },
+    "go_maps_ext": {
+      "composer_name": "clickstorm\/go_maps_ext"
+    },
+    "emailobfuscator": {
+      "composer_name": "zotornit\/emailobfuscator"
+    },
+    "varnish": {
+      "composer_name": "opsone-ch\/varnish"
+    },
+    "static_info_tables_hr": {
+      "composer_name": "leuchtfeuer\/static-info-tables-hr"
+    },
+    "static_info_tables_pt": {
+      "composer_name": "renolit\/static-info-tables-pt"
+    },
+    "static_info_tables_hu": {
+      "composer_name": "leuchtfeuer\/static-info-tables-hu"
+    },
+    "static_info_tables_bg": {
+      "composer_name": "leuchtfeuer\/static-info-tables-bg"
+    },
+    "static_info_tables_tr": {
+      "composer_name": "renolit\/static-info-tables-tr"
+    },
+    "bj_polaroyd": {
+      "composer_name": "bj\/bj-polaroyd"
+    },
+    "ws_less": {
+      "composer_name": "svewap\/ws_less"
+    },
+    "recaptcha": {
+      "composer_name": "evoweb\/recaptcha"
+    },
+    "evangtermine": {
+      "composer_name": "arbkomekvw\/evangtermine"
+    },
+    "maps2": {
+      "composer_name": "jweiland\/maps2"
+    },
+    "vuejs": {
+      "composer_name": "zotornit\/vuejs"
+    },
+    "t3events": {
+      "composer_name": "dwenzel\/t3events"
+    },
+    "fs_media_gallery": {
+      "composer_name": "minifranske\/fs-media-gallery"
+    },
+    "caddy": {
+      "composer_name": "netzmacher\/caddy"
+    },
+    "google_tag_manager": {
+      "composer_name": "aoe\/google-tag-manager"
+    },
+    "cw_twitter": {
+      "composer_name": "lgescobar\/cw-twitter"
+    },
+    "eh_bootstrap": {
+      "composer_name": "ehaerer\/eh-bootstrap"
+    },
+    "backendtools": {
+      "composer_name": "fixpunkt\/backendtools"
+    },
+    "infinitescrolling": {
+      "composer_name": "jweiland\/infinitescrolling"
+    },
+    "ipandlanguageredirect": {
+      "composer_name": "in2code\/ipandlanguageredirect"
+    },
+    "femanager": {
+      "composer_name": "in2code\/femanager"
+    },
+    "sphinx": {
+      "composer_name": "causal\/sphinx"
+    },
+    "ns_theme_extend": {
+      "composer_name": "nitsan\/ns-theme-extend"
+    },
+    "sf_banners": {
+      "composer_name": "derhansen\/sf_banners"
+    },
+    "agency": {
+      "composer_name": "jambagecom\/agency"
+    },
+    "styleguide": {
+      "composer_name": "typo3\/cms-styleguide"
+    },
+    "slub_events": {
+      "composer_name": "slub\/slub-events"
+    },
+    "t3extblog": {
+      "composer_name": "felixnagel\/t3extblog"
+    },
+    "openweatherapi": {
+      "composer_name": "andreaskastl\/openweatherapi"
+    },
+    "fe_performance": {
+      "composer_name": "felixnagel\/fe-performance"
+    },
+    "ns_instagram": {
+      "composer_name": "nitsan\/ns-instagram"
+    },
+    "routing": {
+      "composer_name": "causal\/routing"
+    },
+    "geocoding": {
+      "composer_name": "b13\/geocoding"
+    },
+    "personnel": {
+      "composer_name": "t3brightside\/personnel"
+    },
+    "turn": {
+      "composer_name": "marcwillmann\/turn"
+    },
+    "rte_ckeditor_fontawesome": {
+      "composer_name": "dirkpersky\/typo3-rte-ckeditor-fontawesome"
+    },
+    "fp_fractionslider": {
+      "composer_name": "fixpunkt\/fp-fractionslider"
+    },
+    "store_finder": {
+      "composer_name": "evoweb\/store-finder"
+    },
+    "sessionplaner": {
+      "composer_name": "evoweb\/sessionplaner"
+    },
+    "svconnector_json": {
+      "composer_name": "cobweb\/svconnector_json"
+    },
+    "mfa_webauthn": {
+      "composer_name": "bnf\/mfa-webauthn"
+    },
+    "mfc_belogin_captcha": {
+      "composer_name": "mfc\/mfc-belogin-captcha"
+    },
+    "my_user_management": {
+      "composer_name": "koninklijke-collective\/my-user-management"
+    },
+    "youtubevideo": {
+      "composer_name": "t3brightside\/youtubevideo"
+    },
+    "operations": {
+      "composer_name": "kanow\/operations"
+    },
+    "mask": {
+      "composer_name": "mask\/mask"
+    },
+    "t3ddy": {
+      "composer_name": "arminvieweg\/t3ddy"
+    },
+    "autoswitchtolistview": {
+      "composer_name": "georgringer\/autoswitchtolistview"
+    },
+    "content_defender": {
+      "composer_name": "ichhabrecht\/content-defender"
+    },
+    "ppi_templavoila_notes": {
+      "composer_name": "templavoilaplus\/ppi_templavoila_notes"
+    },
+    "t3foundation": {
+      "composer_name": "netzmacher\/t3foundation"
+    },
+    "pxa_cookie_bar": {
+      "composer_name": "pixelant\/pxa-cookie-bar"
+    },
+    "camaliga": {
+      "composer_name": "quizpalme\/camaliga"
+    },
+    "byt_coordconverter": {
+      "composer_name": "brotkrueml\/coordconverter"
+    },
+    "formhandler_clearlog_task": {
+      "composer_name": "webit-de\/formhandler-clearlog-task"
+    },
+    "auth0": {
+      "composer_name": "leuchtfeuer\/auth0"
+    },
+    "custom_error_page": {
+      "composer_name": "bitmotion\/custom-error-page"
+    },
+    "agency_tt_address": {
+      "composer_name": "jambagecom\/agency-tt-address"
+    },
+    "introduction": {
+      "composer_name": "typo3\/cms-introduction"
+    },
+    "proxycachemanager": {
+      "composer_name": "b13\/proxycachemanager"
+    },
+    "cors": {
+      "composer_name": "pagemachine\/cors"
+    },
+    "launchquickshop": {
+      "composer_name": "netzmacher\/launchquickshop"
+    },
+    "warmup": {
+      "composer_name": "b13\/warmup"
+    },
+    "assetloader": {
+      "composer_name": "sethorax\/typo3-assetloader"
+    },
+    "flexible_pages": {
+      "composer_name": "itplusx\/flexible-pages"
+    },
+    "t3sbootstrap": {
+      "composer_name": "t3sbs\/t3sbootstrap"
+    },
+    "ns_protect_site": {
+      "composer_name": "nitsan\/ns-protect-site"
+    },
+    "launch": {
+      "composer_name": "netzmacher\/launch"
+    },
+    "launchstartgreen": {
+      "composer_name": "netzmacher\/launchstartgreen"
+    },
+    "gravatar": {
+      "composer_name": "minifranske\/gravatar"
+    },
+    "ns_all_sliders": {
+      "composer_name": "nitsan\/ns-all-sliders"
+    },
+    "fal_securedownload": {
+      "composer_name": "beechit\/fal-securedownload"
+    },
+    "extractor": {
+      "composer_name": "causal\/extractor"
+    },
+    "ns_twitter": {
+      "composer_name": "nitsan\/ns-twitter"
+    },
+    "spreadshop": {
+      "composer_name": "mediaessenz\/spreadshop"
+    },
+    "bootstrap_package": {
+      "composer_name": "bk2k\/bootstrap-package"
+    },
+    "rdct": {
+      "composer_name": "friendsoftypo3\/rdct"
+    },
+    "begroups_roles": {
+      "composer_name": "ichhabrecht\/begroups-roles"
+    },
+    "ns_all_lightbox": {
+      "composer_name": "nitsan\/ns-all-lightbox"
+    },
+    "calendarize": {
+      "composer_name": "lochmueller\/calendarize"
+    },
+    "autoloader": {
+      "composer_name": "lochmueller\/autoloader"
+    },
+    "typo3_console": {
+      "composer_name": "helhum\/typo3-console"
+    },
+    "belogin_images": {
+      "composer_name": "svenjuergens\/belogin_images"
+    },
+    "cart": {
+      "composer_name": "extcode\/cart"
+    },
+    "xm_formcycle": {
+      "composer_name": "xima-media\/xm_formcycle"
+    },
+    "hosts_pattern": {
+      "composer_name": "ichhabrecht\/hosts-pattern"
+    },
+    "dfgviewer": {
+      "composer_name": "slub\/dfgviewer"
+    },
+    "sf_event_mgt": {
+      "composer_name": "derhansen\/sf_event_mgt"
+    },
+    "extender": {
+      "composer_name": "evoweb\/extender"
+    },
+    "ns_disqus_comments": {
+      "composer_name": "nitsan\/ns-disqus-comments"
+    },
+    "typoscript_rendering": {
+      "composer_name": "helhum\/typoscript-rendering"
+    },
+    "notiz": {
+      "composer_name": "cuyz\/notiz"
+    },
+    "femanager_dmail_subscribe": {
+      "composer_name": "derhansen\/femanager_dmail_subscribe"
+    },
+    "addons_em": {
+      "composer_name": "jambagecom\/addons-em"
+    },
+    "simplepoll": {
+      "composer_name": "pixelink\/simplepoll"
+    },
+    "slick": {
+      "composer_name": "netzmacher\/slick"
+    },
+    "devtools": {
+      "composer_name": "ichhabrecht\/devtools"
+    },
+    "aus_driver_amazon_s3": {
+      "composer_name": "andersundsehr\/aus-driver-amazon-s3"
+    },
+    "importr": {
+      "composer_name": "sirdiego\/importr"
+    },
+    "includekrexx": {
+      "composer_name": "brainworxx\/includekrexx"
+    },
+    "aimeos": {
+      "composer_name": "aimeos\/aimeos-typo3"
+    },
+    "t3calendar": {
+      "composer_name": "dwenzel\/t3calendar"
+    },
+    "wp_directmailreturn": {
+      "composer_name": "webprofil\/wp-directmailreturn"
+    },
+    "teaser_manager": {
+      "composer_name": "lst\/teaser-manager"
+    },
+    "tslib_fetce": {
+      "composer_name": "jambagecom\/tslib-fetce"
+    },
+    "color_extractor": {
+      "composer_name": "svenjuergens\/color-extractor"
+    },
+    "hairu": {
+      "composer_name": "pagemachine\/hairu"
+    },
+    "start": {
+      "composer_name": "netzmacher\/start"
+    },
+    "rest": {
+      "composer_name": "cundd\/rest"
+    },
+    "jh_captcha": {
+      "composer_name": "haffner\/jh_captcha"
+    },
+    "blog_template": {
+      "composer_name": "t3g\/blog-template"
+    },
+    "felogin_bruteforce_protection": {
+      "composer_name": "aoe\/felogin-bruteforce-protection"
+    },
+    "flush_language_cache": {
+      "composer_name": "cobweb\/flush_language_cache"
+    },
+    "translate_locallang": {
+      "composer_name": "undefined\/translate-locallang"
+    },
+    "pb_social": {
+      "composer_name": "plusb\/pb_social"
+    },
+    "jumpurl": {
+      "composer_name": "friendsoftypo3\/jumpurl"
+    },
+    "setdefaultauthor": {
+      "composer_name": "t3graf\/setdefaultauthor"
+    },
+    "rx_shariff": {
+      "composer_name": "reelworx\/rx-shariff"
+    },
+    "eventnews": {
+      "composer_name": "georgringer\/eventnews"
+    },
+    "reint_downloadmanager": {
+      "composer_name": "renolit\/reint-downloadmanager"
+    },
+    "cdsrc_bepwreset": {
+      "composer_name": "cdsrc\/cdsrc-bepwreset"
+    },
+    "calendarize_news": {
+      "composer_name": "lochmueller\/calendarize-news"
+    },
+    "ats": {
+      "composer_name": "pagemachine\/ats"
+    },
+    "sentry_client": {
+      "composer_name": "networkteam\/sentry-client"
+    },
+    "loginviaemail": {
+      "composer_name": "cylancer\/loginviaemail"
+    },
+    "cookieviewhelper": {
+      "composer_name": "apistudio\/cookieviewhelper"
+    },
+    "focuspoint": {
+      "composer_name": "lochmueller\/focuspoint"
+    },
+    "pits_downloadcenter": {
+      "composer_name": "pits\/downloadcenter"
+    },
+    "lib_jquery": {
+      "composer_name": "sonority\/lib-jquery"
+    },
+    "ns_all_chat": {
+      "composer_name": "nitsan\/ns-all-chat"
+    },
+    "sg_contentlink": {
+      "composer_name": "sgalinski\/sg-contentlink"
+    },
+    "eh_backend": {
+      "composer_name": "ehaerer\/eh-backend"
+    },
+    "ameos_form": {
+      "composer_name": "ameos\/ameos_form"
+    },
+    "ameos_mailredirect": {
+      "composer_name": "ameos\/ameos_mailredirect"
+    },
+    "mmc_directmail_subscription": {
+      "composer_name": "mmc\/directmail-subscription"
+    },
+    "bgm_hreflang": {
+      "composer_name": "bgm\/bgm-hreflang"
+    },
+    "my_redirects": {
+      "composer_name": "koninklijke-collective\/my-redirects"
+    },
+    "reint_powermail_country": {
+      "composer_name": "renolit\/reint-powermail-country"
+    },
+    "mmc_guestbook": {
+      "composer_name": "mmc\/guestbook"
+    },
+    "mmc_slideshow": {
+      "composer_name": "mmc\/slideshow"
+    },
+    "static_info_tables_cs": {
+      "composer_name": "leuchtfeuer\/static-info-tables-cs"
+    },
+    "localizer": {
+      "composer_name": "localizationteam\/localizer"
+    },
+    "ameos_filemanager": {
+      "composer_name": "ameos\/ameos_filemanager"
+    },
+    "news_importicsxml": {
+      "composer_name": "georgringer\/news-importicsxml"
+    },
+    "minicleaner": {
+      "composer_name": "svenjuergens\/minicleaner"
+    },
+    "single_signon": {
+      "composer_name": "bitmotion\/single-signon"
+    },
+    "fal_s3": {
+      "composer_name": "maxserv\/fal_s3"
+    },
+    "tobserver": {
+      "composer_name": "derhansen\/tobserver"
+    },
+    "deployer_information": {
+      "composer_name": "spooner\/deployer-information"
+    },
+    "disable_beuser": {
+      "composer_name": "svenjuergens\/disable_beuser"
+    },
+    "aoe_ipauth": {
+      "composer_name": "aoe\/aoe_ipauth"
+    },
+    "startcustomer": {
+      "composer_name": "netzmacher\/startcustomer"
+    },
+    "pxa_form_enhancement": {
+      "composer_name": "pixelant\/pxa-form-enhancement"
+    },
+    "fluid_form": {
+      "composer_name": "codingms\/fluid-form"
+    },
+    "foundation_grids": {
+      "composer_name": "simonschaufi\/foundation-grids"
+    },
+    "openid": {
+      "composer_name": "friendsoftypo3\/openid"
+    },
+    "advancedtitle": {
+      "composer_name": "t3brightside\/advancedtitle"
+    },
+    "social_auth": {
+      "composer_name": "kalypso63\/social_auth"
+    },
+    "mymap": {
+      "composer_name": "wsr\/mymap"
+    },
+    "ws_scss": {
+      "composer_name": "svewap\/ws-scss"
+    },
+    "just_news": {
+      "composer_name": "spooner-web\/just_news"
+    },
+    "slickcarousel": {
+      "composer_name": "bo\/slickcarousel"
+    },
+    "legacy_collections": {
+      "composer_name": "friendsoftypo3\/legacy-collections"
+    },
+    "just_sitemap": {
+      "composer_name": "spooner-web\/just_sitemap"
+    },
+    "cleverreach": {
+      "composer_name": "svewap\/cleverreach"
+    },
+    "fs_code_snippet": {
+      "composer_name": "danielgoerz\/fs-code-snippet"
+    },
+    "bookmark_pages": {
+      "composer_name": "colorcube\/bookmark-pages"
+    },
+    "reint_file_timestamp": {
+      "composer_name": "renolit\/reint-file-timestamp"
+    },
+    "sav_network": {
+      "composer_name": "yolftypo3\/sav-network"
+    },
+    "px_semantic": {
+      "composer_name": "portrino\/px_semantic"
+    },
+    "koning_comments": {
+      "composer_name": "koninklijke-collective\/koning-comments"
+    },
+    "tgm_copyright": {
+      "composer_name": "paulbeck\/tgm-copyright"
+    },
+    "autoflush": {
+      "composer_name": "qbus\/autoflush"
+    },
+    "nginx_cache": {
+      "composer_name": "qbus\/nginx-cache"
+    },
+    "dm_developerlog": {
+      "composer_name": "diemedialen\/dm-developerlog"
+    },
+    "ew_llxml2xliff": {
+      "composer_name": "evoweb\/ew-llxml2xliff"
+    },
+    "t3monitor": {
+      "composer_name": "brainappeal\/t3monitor"
+    },
+    "myflat": {
+      "composer_name": "wsr\/myflat"
+    },
+    "shortcut_statuscodes": {
+      "composer_name": "webit-de\/shortcut_statuscodes"
+    },
+    "sav_charts": {
+      "composer_name": "yolftypo3\/sav-charts"
+    },
+    "skip_page_is_being_generated": {
+      "composer_name": "qbus\/skip-page-is-being-generated"
+    },
+    "default_upload_folder": {
+      "composer_name": "beechit\/default-upload-folder"
+    },
+    "px_shopware": {
+      "composer_name": "portrino\/px_shopware"
+    },
+    "koning_open_graph": {
+      "composer_name": "koninklijke-collective\/koning-open-graph"
+    },
+    "rte_ckeditor_image": {
+      "composer_name": "netresearch\/rte-ckeditor-image"
+    },
+    "compatibility7": {
+      "composer_name": "friendsoftypo3\/compatibility7"
+    },
+    "cs_seo": {
+      "composer_name": "clickstorm\/cs_seo"
+    },
+    "miniorange_saml": {
+      "composer_name": "miniorange\/miniorange-saml"
+    },
+    "koning_bootstrap_carousel": {
+      "composer_name": "koninklijke-collective\/koning-bootstrap-carousel"
+    },
+    "nitsan_hellobar": {
+      "composer_name": "nitsan\/nitsan-hellobar"
+    },
+    "domaincheck": {
+      "composer_name": "mediaessenz\/domaincheck"
+    },
+    "koning_library": {
+      "composer_name": "koninklijke-collective\/koning-library"
+    },
+    "sf_event_mgt_indexer": {
+      "composer_name": "derhansen\/sf_event_mgt_indexer"
+    },
+    "pp_gridelements": {
+      "composer_name": "buepro\/typo3-pp-gridelements"
+    },
+    "azurestorage": {
+      "composer_name": "b3n\/azurestorage"
+    },
+    "costumcontentpreview": {
+      "composer_name": "mdy\/costumcontentpreview"
+    },
+    "registeraddress": {
+      "composer_name": "afm\/registeraddress"
+    },
+    "nitsan_maintenance": {
+      "composer_name": "nitsan\/nitsan-maintenance"
+    },
+    "static_info_tables_pt_br": {
+      "composer_name": "leuchtfeuer\/static-info-tables-pt-br"
+    },
+    "static_info_tables_fa": {
+      "composer_name": "leuchtfeuer\/static-info-tables-fa"
+    },
+    "weather2": {
+      "composer_name": "jweiland\/weather2"
+    },
+    "blog": {
+      "composer_name": "t3g\/blog"
+    },
+    "yoast_seo": {
+      "composer_name": "yoast-seo-for-typo3\/yoast_seo"
+    },
+    "mask_export": {
+      "composer_name": "ichhabrecht\/mask-export"
+    },
+    "rte_class_wildcard": {
+      "composer_name": "spooner-web\/rte_class_wildcard"
+    },
+    "powermail_fastexport": {
+      "composer_name": "bithost-gmbh\/powermail_fastexport"
+    },
+    "cart_paypal": {
+      "composer_name": "extcode\/cart-paypal"
+    },
+    "cart_pdf": {
+      "composer_name": "extcode\/cart-pdf"
+    },
+    "contacts": {
+      "composer_name": "extcode\/contacts"
+    },
+    "ajaxselectlist": {
+      "composer_name": "sebkln\/ajaxselectlist"
+    },
+    "page_speed_plus": {
+      "composer_name": "atomicptr\/page_speed_plus"
+    },
+    "emogrifier": {
+      "composer_name": "webentwicklerat\/emogrifier"
+    },
+    "bm_image_gallery": {
+      "composer_name": "leuchtfeuer\/bm-image-gallery"
+    },
+    "querybuilder": {
+      "composer_name": "t3g\/querybuilder"
+    },
+    "blogging": {
+      "composer_name": "atomicptr\/blogging"
+    },
+    "ppi_templavoilaplus_yoast": {
+      "composer_name": "templavoilaplus\/ppi_templavoilaplus_yoast"
+    },
+    "pdfviewhelpers": {
+      "composer_name": "bithost-gmbh\/pdfviewhelpers"
+    },
+    "bolt": {
+      "composer_name": "b13\/bolt"
+    },
+    "imageoptimizer": {
+      "composer_name": "christophlehmann\/imageoptimizer"
+    },
+    "realurl_trace": {
+      "composer_name": "dmitryd\/typo3-realurl-trace"
+    },
+    "ameos_dailymotion": {
+      "composer_name": "ameos\/ameos_dailymotion"
+    },
+    "webfonts": {
+      "composer_name": "zotornit\/webfonts"
+    },
+    "oidc": {
+      "composer_name": "causal\/oidc"
+    },
+    "toc": {
+      "composer_name": "oneandone\/toc"
+    },
+    "languagemod": {
+      "composer_name": "leuchtfeuer\/languagemod"
+    },
+    "min": {
+      "composer_name": "t3\/min"
+    },
+    "mksamlauth": {
+      "composer_name": "dmk\/mksamlauth"
+    },
+    "tvplus_contentslide": {
+      "composer_name": "jpmschuler\/tvplus-contentslide"
+    },
+    "address_manager": {
+      "composer_name": "codingms\/address-manager"
+    },
+    "beuser_fastswitch": {
+      "composer_name": "josefglatz\/beuser-fastswitch"
+    },
+    "startgreen": {
+      "composer_name": "netzmacher\/startgreen"
+    },
+    "masi": {
+      "composer_name": "b13\/masi"
+    },
+    "hh_ckeditor_custom": {
+      "composer_name": "hauerheinrich\/hh-ckeditor-custom"
+    },
+    "auto404": {
+      "composer_name": "colorcube\/auto404"
+    },
+    "t3cms": {
+      "composer_name": "salvatoreeckel\/t3cms"
+    },
+    "vnc_powermail_encrypt": {
+      "composer_name": "vancado\/vnc-powermail-encrypt"
+    },
+    "mautic": {
+      "composer_name": "mautic\/mautic-typo3"
+    },
+    "in2publish_core": {
+      "composer_name": "in2code\/in2publish_core"
+    },
+    "slim_typo3": {
+      "composer_name": "bnf\/slim-typo3"
+    },
+    "poll": {
+      "composer_name": "codingms\/poll"
+    },
+    "templavoilaplus": {
+      "composer_name": "templavoilaplus\/templavoilaplus"
+    },
+    "sce": {
+      "composer_name": "d3m\/sce"
+    },
+    "google_reviews": {
+      "composer_name": "ddoronenko\/google-reviews"
+    },
+    "threeme": {
+      "composer_name": "threeme\/threeme"
+    },
+    "ipm_cline": {
+      "composer_name": "ipandmore\/ipm-cline"
+    },
+    "cart_saferpay": {
+      "composer_name": "extcode\/cart-saferpay"
+    },
+    "tinyimg": {
+      "composer_name": "schmitzal\/tinyimg"
+    },
+    "users": {
+      "composer_name": "saschaende\/users"
+    },
+    "miniredirect": {
+      "composer_name": "svenjuergens\/miniredirect"
+    },
+    "easydb": {
+      "composer_name": "easydb\/typo3-integration"
+    },
+    "bss_events": {
+      "composer_name": "bermuda\/typo3-bss-events"
+    },
+    "rte_ckeditor_automails": {
+      "composer_name": "kitzberger\/rte-ckeditor-automails"
+    },
+    "sms_responsive_images": {
+      "composer_name": "sitegeist\/sms-responsive-images"
+    },
+    "md_news_author": {
+      "composer_name": "mediadreams\/md_news_author"
+    },
+    "pxa_social_feed": {
+      "composer_name": "pixelant\/pxa-social-feed"
+    },
+    "cart_mpay24": {
+      "composer_name": "extcode\/cart-mpay24"
+    },
+    "grid_for_gridelements": {
+      "composer_name": "schmidtwebmedia\/grid-for-gridelements"
+    },
+    "in2studyfinder": {
+      "composer_name": "in2code\/in2studyfinder"
+    },
+    "pizpalue": {
+      "composer_name": "buepro\/typo3-pizpalue"
+    },
+    "realer": {
+      "composer_name": "buepro\/typo3-realer"
+    },
+    "tcpdfbill_tt_products": {
+      "composer_name": "jambagecom\/tcpdfbill-tt-products"
+    },
+    "content_element_registry": {
+      "composer_name": "digitalwerk\/content-element-registry"
+    },
+    "schema": {
+      "composer_name": "brotkrueml\/schema"
+    },
+    "storage_framework_manager": {
+      "composer_name": "filoucrackeur\/storage-framework-manager"
+    },
+    "frontend_editing": {
+      "composer_name": "friendsoftypo3\/frontend-editing"
+    },
+    "fal_protect": {
+      "composer_name": "causal\/fal-protect"
+    },
+    "instagram": {
+      "composer_name": "in2code\/instagram"
+    },
+    "staffholiday": {
+      "composer_name": "chriwo\/staffholiday"
+    },
+    "frp_form_answers": {
+      "composer_name": "frappant\/frp-form-answers"
+    },
+    "locate": {
+      "composer_name": "leuchtfeuer\/locate"
+    },
+    "ns_statcounter": {
+      "composer_name": "nitsan\/ns-statcounter"
+    },
+    "jn_lighterbox": {
+      "composer_name": "joppnet\/jn_lighterbox"
+    },
+    "ppi_templavoilaplus_csseo": {
+      "composer_name": "templavoilaplus\/ppi_templavoilaplus_csseo"
+    },
+    "jn_phpcontentelement": {
+      "composer_name": "joppnet\/jn_phpcontentelement"
+    },
+    "sg_routes": {
+      "composer_name": "sgalinski\/sg-routes"
+    },
+    "invisiblerecaptcha": {
+      "composer_name": "in2code\/invisiblerecaptcha"
+    },
+    "powermailrecaptcha": {
+      "composer_name": "in2code\/powermailrecaptcha"
+    },
+    "realurlconflicts": {
+      "composer_name": "in2code\/realurlconflicts"
+    },
+    "image_tools": {
+      "composer_name": "viktor-firus\/image-tools"
+    },
+    "pxa_survey": {
+      "composer_name": "pixelant\/pxa-survey"
+    },
+    "headless": {
+      "composer_name": "friendsoftypo3\/headless"
+    },
+    "tp3ratings": {
+      "composer_name": "web-tp3\/tp3ratings"
+    },
+    "tp3_social": {
+      "composer_name": "web-tp3\/tp3social"
+    },
+    "tp3_facebook": {
+      "composer_name": "web-tp3\/tp3-facebook"
+    },
+    "abtest2": {
+      "composer_name": "svewap\/abtest2"
+    },
+    "dragon_drop": {
+      "composer_name": "kitzberger\/dragon-drop"
+    },
+    "me_backend_security": {
+      "composer_name": "move-elevator\/me-backend-security"
+    },
+    "urlguard": {
+      "composer_name": "sourcebroker\/urlguard"
+    },
+    "pr_teamspeak": {
+      "composer_name": "kronova\/pr-teamspeak"
+    },
+    "t3themes_bootstrap4": {
+      "composer_name": "salvatoreeckel\/t3themes_bootstrap4"
+    },
+    "t3content_bootstrap4": {
+      "composer_name": "salvatoreeckel\/t3content_bootstrap4"
+    },
+    "in2connector": {
+      "composer_name": "in2code\/in2connector"
+    },
+    "events2": {
+      "composer_name": "jweiland\/events2"
+    },
+    "lazyfxx": {
+      "composer_name": "brainworxx\/lazyfxx"
+    },
+    "typo3_console_cleartempfiles": {
+      "composer_name": "webit-de\/typo3_console_cleartempfiles"
+    },
+    "fidelo": {
+      "composer_name": "fidelo\/typo3"
+    },
+    "tp3mods": {
+      "composer_name": "web-tp3\/tp3mods"
+    },
+    "tp3_businessview": {
+      "composer_name": "web-tp3\/tp3businessview"
+    },
+    "microtemplate": {
+      "composer_name": "t3brightside\/microtemplate"
+    },
+    "debug_settings_task": {
+      "composer_name": "webit-de\/debug-settings-task"
+    },
+    "fluid_form_elements": {
+      "composer_name": "spooner-web\/fluid-form-elements"
+    },
+    "myttaddressmap": {
+      "composer_name": "wsr\/myttaddressmap"
+    },
+    "replacer": {
+      "composer_name": "jweiland\/replacer"
+    },
+    "samlauthentication": {
+      "composer_name": "daniel-pfeil\/samlauthentication"
+    },
+    "sudhaus7_viewhelpers": {
+      "composer_name": "sudhaus7\/sudhaus7-viewhelpers"
+    },
+    "formlog": {
+      "composer_name": "pagemachine\/typo3-formlog"
+    },
+    "lux": {
+      "composer_name": "in2code\/lux"
+    },
+    "metaplus": {
+      "composer_name": "t3brightside\/metaplus"
+    },
+    "vhs_scss": {
+      "composer_name": "pkerling\/vhs_scss"
+    },
+    "gdpr": {
+      "composer_name": "georgringer\/gdpr"
+    },
+    "ppi_tvplus_linkvalidator": {
+      "composer_name": "templavoilaplus\/ppi_tvplus_linkvalidator"
+    },
+    "bynder": {
+      "composer_name": "beechit\/bynder"
+    },
+    "tp3_jobs": {
+      "composer_name": "web-tp3\/tp3jobs"
+    },
+    "filefill": {
+      "composer_name": "ichhabrecht\/filefill"
+    },
+    "t3helpers": {
+      "composer_name": "saschaende\/t3helpers"
+    },
+    "t3am": {
+      "composer_name": "in2code\/t3am"
+    },
+    "t3am_server": {
+      "composer_name": "in2code\/t3am_server"
+    },
+    "iconcheck": {
+      "composer_name": "josefglatz\/iconcheck"
+    },
+    "mail_css_inliner": {
+      "composer_name": "pagemachine\/typo3-mail-css-inliner"
+    },
+    "aws": {
+      "composer_name": "saschaende\/typo3-aws"
+    },
+    "pagelist": {
+      "composer_name": "t3brightside\/pagelist"
+    },
+    "content_overview": {
+      "composer_name": "colorcube\/content-overview"
+    },
+    "file_ref_list": {
+      "composer_name": "colorcube\/file-ref-list"
+    },
+    "microdistro": {
+      "composer_name": "t3brightside\/microdistro"
+    },
+    "shredder": {
+      "composer_name": "colorcube\/shredder"
+    },
+    "rte_proc_tester": {
+      "composer_name": "colorcube\/rte-proc-tester"
+    },
+    "t3tags": {
+      "composer_name": "ichhabrecht\/t3tags"
+    },
+    "tp3_openhours": {
+      "composer_name": "web-tp3\/tp3_openhours"
+    },
+    "cart_events": {
+      "composer_name": "extcode\/cart-events"
+    },
+    "cart_products": {
+      "composer_name": "extcode\/cart-products"
+    },
+    "femanager_cleverreach": {
+      "composer_name": "t3premium\/femanager_cleverreach"
+    },
+    "avalex": {
+      "composer_name": "jweiland\/avalex"
+    },
+    "zabbix_client": {
+      "composer_name": "wapplersystems\/zabbix_client"
+    },
+    "ew_socialfeedwall": {
+      "composer_name": "evoweb\/ew-socialfeedwall"
+    },
+    "migration_core": {
+      "composer_name": "jambagecom\/migration-core"
+    },
+    "myleaflet": {
+      "composer_name": "wsr\/myleaflet"
+    },
+    "solr_file_indexer": {
+      "composer_name": "hmmh\/solr-file-indexer"
+    },
+    "video_shariff": {
+      "composer_name": "jweiland\/video-shariff"
+    },
+    "fe_cookies": {
+      "composer_name": "aaw-team\/fe_cookies"
+    },
+    "t3googleanalytics": {
+      "composer_name": "visuellverstehen\/t3googleanalytics"
+    },
+    "pxa_siteimprove": {
+      "composer_name": "pixelant\/pxa-siteimprove"
+    },
+    "dp_cookieconsent": {
+      "composer_name": "dirkpersky\/typo3-dp_cookieconsent"
+    },
+    "project_version": {
+      "composer_name": "kamiyang\/ext-projectversion"
+    },
+    "cookie_data_privacy": {
+      "composer_name": "typo3liebhaber\/cookie_data_privacy"
+    },
+    "t3fetch": {
+      "composer_name": "visuellverstehen\/t3fetch"
+    },
+    "bw_jobs": {
+      "composer_name": "browserwerk\/bw_jobs"
+    },
+    "marketing_automation": {
+      "composer_name": "leuchtfeuer\/marketing-automation"
+    },
+    "auto_translator": {
+      "composer_name": "hn\/auto-translator"
+    },
+    "auto_translator_deepl": {
+      "composer_name": "hn\/auto-translator-deepl"
+    },
+    "ns_ext_compatibility": {
+      "composer_name": "nitsan\/ns_ext_compatibility"
+    },
+    "cf_google_authenticator": {
+      "composer_name": "codefareith\/cf-google-authenticator"
+    },
+    "cdn_assets": {
+      "composer_name": "tehplague\/cdn_assets"
+    },
+    "vhsminify": {
+      "composer_name": "rafu1987\/vhsminify"
+    },
+    "publications": {
+      "composer_name": "in2code\/publications"
+    },
+    "glossary_one": {
+      "composer_name": "hn\/glossary-one"
+    },
+    "post_parser": {
+      "composer_name": "hn\/post-parser"
+    },
+    "container_elements": {
+      "composer_name": "buepro\/typo3-container-elements"
+    },
+    "osm": {
+      "composer_name": "in2code\/osm"
+    },
+    "hcaptcha": {
+      "composer_name": "susanne\/hcaptcha"
+    },
+    "oauth2": {
+      "composer_name": "mfc\/oauth2"
+    },
+    "bulma_package": {
+      "composer_name": "agrosup-dijon\/bulma-package"
+    },
+    "formsave": {
+      "composer_name": "hn\/formsave"
+    },
+    "ns_news_comments": {
+      "composer_name": "nitsan\/ns-news-comments"
+    },
+    "ns_youtube": {
+      "composer_name": "nitsan\/ns-youtube"
+    },
+    "yoast_news": {
+      "composer_name": "haassie\/yoast_news"
+    },
+    "getenv_modifier": {
+      "composer_name": "undkonsorten\/typo3-getenv-modifier"
+    },
+    "fluid_styleguide": {
+      "composer_name": "sitegeist\/fluid-styleguide"
+    },
+    "fluid_components": {
+      "composer_name": "sitegeist\/fluid-components"
+    },
+    "deepltranslate": {
+      "composer_name": "pits\/deepltranslate"
+    },
+    "nginx_connector": {
+      "composer_name": "alexander-nitsche\/typo3-nginx-connector"
+    },
+    "google_ads": {
+      "composer_name": "t3g\/google-ads"
+    },
+    "wm_pagepath": {
+      "composer_name": "lsascha\/wm-pagepath"
+    },
+    "icon_content": {
+      "composer_name": "lavitto\/typo3-icon-content"
+    },
+    "sudhaus7_gpgadmin": {
+      "composer_name": "sudhaus7\/sudhaus7-gpgadmin"
+    },
+    "base_excel": {
+      "composer_name": "jambagecom\/base-excel"
+    },
+    "steinbauerit_googlereviews": {
+      "composer_name": "steinbauerit\/sit-googlereviews"
+    },
+    "visibility": {
+      "composer_name": "joekolade\/visibility"
+    },
+    "base_cache": {
+      "composer_name": "jambagecom\/base-cache"
+    },
+    "quotation_tt_products": {
+      "composer_name": "jambagecom\/quotation-tt-products"
+    },
+    "fe_change_pwd": {
+      "composer_name": "derhansen\/fe_change_pwd"
+    },
+    "mediaconsent": {
+      "composer_name": "arbkomekvw\/mediaconsent"
+    },
+    "yaml_browser": {
+      "composer_name": "christianessl\/yaml_browser"
+    },
+    "pr_googlecse": {
+      "composer_name": "kronova\/pr-googlecse"
+    },
+    "t3view": {
+      "composer_name": "visuellverstehen\/t3view"
+    },
+    "t3visuellverstehen": {
+      "composer_name": "visuellverstehen\/t3visuellverstehen"
+    },
+    "simple_instagram": {
+      "composer_name": "pixelink\/simple-instagram"
+    },
+    "migrate_redirects": {
+      "composer_name": "jigal\/migrate-redirects"
+    },
+    "extpagetitle": {
+      "composer_name": "brotkrueml\/extpagetitle"
+    },
+    "rte_ckeditor_abbr": {
+      "composer_name": "studiomitte\/rte-ckeditor-abbr"
+    },
+    "mainzific_rim": {
+      "composer_name": "t3g\/mainzific-rim"
+    },
+    "pagetree_resizable": {
+      "composer_name": "wazum\/pagetree-resizable"
+    },
+    "cvc_webauthn": {
+      "composer_name": "cvc\/typo3-webauthn"
+    },
+    "ns_theme_cleanblog": {
+      "composer_name": "nitsan\/ns-theme-cleanblog"
+    },
+    "gallerycontent": {
+      "composer_name": "t3brightside\/gallerycontent"
+    },
+    "hide_used_content": {
+      "composer_name": "ichhabrecht\/hide-used-content"
+    },
+    "sdbreadcrumb": {
+      "composer_name": "brotkrueml\/sdbreadcrumb"
+    },
+    "fp_newsletter": {
+      "composer_name": "fixpunkt\/fp-newsletter"
+    },
+    "fp_masterquiz": {
+      "composer_name": "fixpunkt\/fp-masterquiz"
+    },
+    "autosite": {
+      "composer_name": "meteko\/autosite"
+    },
+    "form_options_csv": {
+      "composer_name": "plan2net\/form-options-csv"
+    },
+    "svg_embed": {
+      "composer_name": "neuedaten\/svg-embed"
+    },
+    "ns_facebook_comment": {
+      "composer_name": "nitsan\/ns-facebook-comment"
+    },
+    "spreadsheets": {
+      "composer_name": "hoogi91\/spreadsheets"
+    },
+    "em_sys_note": {
+      "composer_name": "extrameile\/em-sys-note"
+    },
+    "xblog": {
+      "composer_name": "netzmacher\/xblog"
+    },
+    "slug": {
+      "composer_name": "koehlersimon\/slug"
+    },
+    "rte_ckeditor_dl": {
+      "composer_name": "kitzberger\/rte-ckeditor-dl"
+    },
+    "sysfile_faker": {
+      "composer_name": "kitzberger\/sysfile-faker"
+    },
+    "cvc_twig": {
+      "composer_name": "cvc\/typo3-twig"
+    },
+    "seo_aspect_ratios": {
+      "composer_name": "josefglatz\/seo-aspect-ratios"
+    },
+    "t3telephone": {
+      "composer_name": "visuellverstehen\/t3telephone"
+    },
+    "pxa_product_manager": {
+      "composer_name": "pixelant\/pxa-product-manager"
+    },
+    "cart_books": {
+      "composer_name": "extcode\/cart-books"
+    },
+    "c1_adaptive_images": {
+      "composer_name": "c1\/c1-adaptive-images"
+    },
+    "ns_snow": {
+      "composer_name": "nitsan\/ns-snow"
+    },
+    "photoswipe": {
+      "composer_name": "tei\/photoswipe"
+    },
+    "charts": {
+      "composer_name": "hoogi91\/charts"
+    },
+    "http2": {
+      "composer_name": "b13\/http2"
+    },
+    "access_restriction": {
+      "composer_name": "hoogi91\/access-restriction"
+    },
+    "global_password": {
+      "composer_name": "neuedaten\/global-password"
+    },
+    "fox_handler": {
+      "composer_name": "kitzberger\/fox-handler"
+    },
+    "syntax": {
+      "composer_name": "bk2k\/syntax"
+    },
+    "memcacheddiag2": {
+      "composer_name": "jbartels\/memcacheddiag2"
+    },
+    "macrotemplate": {
+      "composer_name": "t3brightside\/macrotemplate"
+    },
+    "fluid_bootstrap_grids": {
+      "composer_name": "tmg\/fluid-bootstrap-grids"
+    },
+    "favicon": {
+      "composer_name": "t3brightside\/favicon"
+    },
+    "youku": {
+      "composer_name": "christianessl\/youku"
+    },
+    "ig_language_detection": {
+      "composer_name": "internetgalerie\/ig-language-detection"
+    },
+    "placeholder_images": {
+      "composer_name": "christianessl\/placeholder_images"
+    },
+    "indexed_search_gc": {
+      "composer_name": "kksoftwareag\/indexed_search_gc"
+    },
+    "tabmoduleclick": {
+      "composer_name": "christianessl\/tabmoduleclick"
+    },
+    "hide_sys_template": {
+      "composer_name": "josefglatz\/hide-sys-template"
+    },
+    "impersonate": {
+      "composer_name": "christianessl\/impersonate"
+    },
+    "gridgallery": {
+      "composer_name": "lavitto\/typo3-gridgallery"
+    },
+    "form_serialnumber": {
+      "composer_name": "t3\/form-serialnumber"
+    },
+    "save": {
+      "composer_name": "t3\/save"
+    },
+    "jwtools2": {
+      "composer_name": "jweiland\/jwtools2"
+    },
+    "sluggi": {
+      "composer_name": "wazum\/sluggi"
+    },
+    "ace_editor": {
+      "composer_name": "codingms\/ace-editor"
+    },
+    "slub_zotero": {
+      "composer_name": "slub\/slub-zotero"
+    },
+    "typo3_phone": {
+      "composer_name": "simonschaufi\/typo3-phone"
+    },
+    "content_animations": {
+      "composer_name": "baschte\/content-animations"
+    },
+    "bw_covid_numbers": {
+      "composer_name": "blueways\/bw-covid-numbers"
+    },
+    "ig_slug": {
+      "composer_name": "internetgalerie\/ig-slug"
+    },
+    "md_unreadnews": {
+      "composer_name": "mediadreams\/md_unreadnews"
+    },
+    "staticfilecache": {
+      "composer_name": "lochmueller\/staticfilecache"
+    },
+    "campus_events_frontend": {
+      "composer_name": "brainappeal\/campus_events_frontend"
+    },
+    "campus_events_convert2ttnews": {
+      "composer_name": "brainappeal\/campus_events_convert2ttnews"
+    },
+    "static_info_tables_uk": {
+      "composer_name": "leuchtfeuer\/static-info-tables-uk"
+    },
+    "static_info_tables_th": {
+      "composer_name": "leuchtfeuer\/static-info-tables-th"
+    },
+    "static_info_tables_ko": {
+      "composer_name": "leuchtfeuer\/static-info-tables-ko"
+    },
+    "static_info_tables_id": {
+      "composer_name": "leuchtfeuer\/static-info-tables-id"
+    },
+    "md_newsfrontend": {
+      "composer_name": "mediadreams\/md_newsfrontend"
+    },
+    "tile": {
+      "composer_name": "netzmacher\/tile"
+    },
+    "ses_mailer": {
+      "composer_name": "different-technology\/ses-mailer"
+    },
+    "backend_module": {
+      "composer_name": "lst\/backend-module"
+    },
+    "glossary2": {
+      "composer_name": "jweiland\/glossary2"
+    },
+    "static_info_tables_ar": {
+      "composer_name": "leuchtfeuer\/static-info-tables-ar"
+    },
+    "ns_cookiebot": {
+      "composer_name": "nitsan\/ns-cookiebot"
+    },
+    "language_redirect": {
+      "composer_name": "biedert\/language-redirect"
+    },
+    "campus_events_convert2news": {
+      "composer_name": "brainappeal\/campus_events_convert2news"
+    },
+    "campus_events_connector": {
+      "composer_name": "brainappeal\/campus_events_connector"
+    },
+    "cart_nexi": {
+      "composer_name": "extcode\/cart-nexi"
+    },
+    "ng_fastyoutube": {
+      "composer_name": "phfr\/ng_fastyoutube"
+    },
+    "js_logger": {
+      "composer_name": "christianessl\/js_logger"
+    },
+    "luxletter": {
+      "composer_name": "in2code\/luxletter"
+    },
+    "media2click": {
+      "composer_name": "amazing\/media2click"
+    },
+    "autologin": {
+      "composer_name": "michielroos\/autologin"
+    },
+    "intcache": {
+      "composer_name": "ichhabrecht\/intcache"
+    },
+    "hh_video_extender": {
+      "composer_name": "hauerheinrich\/hh-video-extender"
+    },
+    "hh_slider": {
+      "composer_name": "hauerheinrich\/hh-slider"
+    },
+    "h5p": {
+      "composer_name": "michielroos\/h5p"
+    },
+    "hidpi": {
+      "composer_name": "hn\/hidpi"
+    },
+    "ama_t3_upgrade_assistant": {
+      "composer_name": "amartinno1\/ama-t3-upgrade-assistant"
+    },
+    "video": {
+      "composer_name": "hn\/video"
+    },
+    "fancybox": {
+      "composer_name": "lavitto\/typo3-fancybox"
+    },
+    "at_slider": {
+      "composer_name": "ashokatree\/atslider"
+    },
+    "form_to_database": {
+      "composer_name": "lavitto\/typo3-form-to-database"
+    },
+    "apc_manager": {
+      "composer_name": "lavitto\/typo3-apc-manager"
+    },
+    "plain_faq": {
+      "composer_name": "derhansen\/plain-faq"
+    },
+    "autosave": {
+      "composer_name": "lavitto\/typo3-autosave"
+    },
+    "markdown_parser": {
+      "composer_name": "lavitto\/typo3-markdown-parser"
+    },
+    "lscache": {
+      "composer_name": "atomicptr\/lscache"
+    },
+    "justincase": {
+      "composer_name": "b13\/justincase"
+    },
+    "distributed_locks": {
+      "composer_name": "b13\/distributed-locks"
+    },
+    "intl": {
+      "composer_name": "hn\/intl"
+    },
+    "abexto_schemaorg_breadcrumb": {
+      "composer_name": "abexto\/abexto-schemaorg-breadcrumb"
+    },
+    "gone": {
+      "composer_name": "bitmotion\/gone"
+    },
+    "formrelay": {
+      "composer_name": "mediatis\/formrelay"
+    },
+    "form_newsletter": {
+      "composer_name": "brainworxx\/form-newsletter"
+    },
+    "syzygy_qrpreview": {
+      "composer_name": "syzygy-typo3\/syzygy-qrpreview"
+    },
+    "page_speed_insights": {
+      "composer_name": "haassie\/page-speed-insights"
+    },
+    "fluidcontent_flux_migration": {
+      "composer_name": "different-technology\/fluidcontent-flux-migration"
+    },
+    "ns_guestbook": {
+      "composer_name": "nitsan\/ns-guestbook"
+    },
+    "t3api": {
+      "composer_name": "sourcebroker\/t3api"
+    },
+    "headertoallelements": {
+      "composer_name": "mdy\/headertoallelements"
+    },
+    "html2textlibrary": {
+      "composer_name": "webit-de\/html2textlibrary"
+    },
+    "webcare": {
+      "composer_name": "datareporter\/webcare"
+    },
+    "z7_blog_comments": {
+      "composer_name": "zeroseven\/z7-blog-comments"
+    },
+    "bp_pagetree": {
+      "composer_name": "bueroparallel\/bp-pagetree"
+    },
+    "ns_basetheme": {
+      "composer_name": "nitsan\/ns-basetheme"
+    },
+    "lottie": {
+      "composer_name": "theline\/typo3-lottie"
+    },
+    "assetcollector": {
+      "composer_name": "b13\/assetcollector"
+    },
+    "wdb_language_fallback": {
+      "composer_name": "wdb\/wdb-language-fallback"
+    },
+    "startredgreen": {
+      "composer_name": "netzmacher\/startredgreen"
+    },
+    "redis_diag": {
+      "composer_name": "jbartels\/redis_diag"
+    },
+    "site_language_redirection": {
+      "composer_name": "urbantrout\/site-language-redirection"
+    },
+    "be_auto_login": {
+      "composer_name": "hmmh\/be-auto-login"
+    },
+    "httpbasicauth": {
+      "composer_name": "christophlehmann\/httpbasicauth"
+    },
+    "share_a_secret": {
+      "composer_name": "hn\/share-a-secret"
+    },
+    "jobrouter_connector": {
+      "composer_name": "brotkrueml\/typo3-jobrouter-connector"
+    },
+    "jobrouter_data": {
+      "composer_name": "brotkrueml\/typo3-jobrouter-data"
+    },
+    "youtube_gdprembed": {
+      "composer_name": "saschaschieferdecker\/youtube_gdprembed"
+    },
+    "picture": {
+      "composer_name": "b13\/picture"
+    },
+    "device": {
+      "composer_name": "coderscare\/device"
+    },
+    "oclock": {
+      "composer_name": "the-coding-owl\/oclock"
+    },
+    "cropvariantsbuilder": {
+      "composer_name": "josefglatz\/cropvariantsbuilder"
+    },
+    "google_for_jobs": {
+      "composer_name": "pegasus\/google-for-jobs"
+    },
+    "codehighlight": {
+      "composer_name": "brotkrueml\/codehighlight"
+    },
+    "patchlayout": {
+      "composer_name": "bugfix\/patchlayout"
+    },
+    "cardealer": {
+      "composer_name": "exotec\/cardealer"
+    },
+    "counter": {
+      "composer_name": "lavitto\/typo3-counter"
+    },
+    "questionaire": {
+      "composer_name": "exotec\/questionaire"
+    },
+    "t2_captcha": {
+      "composer_name": "trafo2\/t2_captcha"
+    },
+    "ns_news_slider": {
+      "composer_name": "nitsan\/ns-news-slider"
+    },
+    "ns_zoho_crm": {
+      "composer_name": "nitsan\/ns-zoho-crm"
+    },
+    "fixedsidemenu": {
+      "composer_name": "mdy\/fixedsidemenu"
+    },
+    "powermail_voucher": {
+      "composer_name": "belsignum\/powermail-voucher"
+    },
+    "spacer_subpages": {
+      "composer_name": "pulponair\/spacer-subpages"
+    },
+    "ajax_pagination": {
+      "composer_name": "skeuper\/ajax-pagination"
+    },
+    "cookiebot": {
+      "composer_name": "mjpr\/cookiebot"
+    },
+    "additional_site_conditions": {
+      "composer_name": "schriner\/additional-site-conditions"
+    },
+    "translatelabels": {
+      "composer_name": "sitegeist\/translatelabels"
+    },
+    "my_configurable_routes": {
+      "composer_name": "serfhos\/my-configurable-routes"
+    },
+    "sg_cookie_optin": {
+      "composer_name": "sgalinski\/sg-cookie-optin"
+    },
+    "menus": {
+      "composer_name": "b13\/menus"
+    },
+    "pwa_manifest": {
+      "composer_name": "friendsoftypo3\/pwa_manifest"
+    },
+    "bugsnag": {
+      "composer_name": "michielroos\/bugsnag"
+    },
+    "slug_autoupdate": {
+      "composer_name": "hendrikreimers\/slug_autoupdate"
+    },
+    "sav_filters": {
+      "composer_name": "yolftypo3\/sav-filters"
+    },
+    "om_cookie_manager": {
+      "composer_name": "opfaff\/om-cookie-manager"
+    },
+    "em_tvplus_pagespeedinsights": {
+      "composer_name": "extrameile\/em_tvplus_pagespeedinsights"
+    },
+    "cookieman": {
+      "composer_name": "dmind\/cookieman"
+    },
+    "md_fullcalendar": {
+      "composer_name": "mediadreams\/md_fullcalendar"
+    },
+    "ce_timeline": {
+      "composer_name": "simonkoehler\/ce-timeline"
+    },
+    "svconnector_xls": {
+      "composer_name": "pagemachine\/svconnector-xls"
+    },
+    "form_country_select": {
+      "composer_name": "brotkrueml\/form-country-select"
+    },
+    "ns_theme_t3nitsan": {
+      "composer_name": "nitsan\/ns-theme-t3nitsan"
+    },
+    "ns_theme_freelancer": {
+      "composer_name": "nitsan\/ns-theme-freelancer"
+    },
+    "ns_theme_agency": {
+      "composer_name": "nitsan\/ns-theme-agency"
+    },
+    "rc_probuerger": {
+      "composer_name": "ruhrconnect\/rc-probuerger"
+    },
+    "import_tt_address_nicosdir": {
+      "composer_name": "jambagecom\/import-tt-address-nicosdir"
+    },
+    "usercentrics": {
+      "composer_name": "t3g\/usercentrics"
+    },
+    "routes": {
+      "composer_name": "lms\/routes"
+    },
+    "dummy_content": {
+      "composer_name": "colorcube\/dummy-content"
+    },
+    "container": {
+      "composer_name": "b13\/container"
+    },
+    "fluid_page_cache": {
+      "composer_name": "t3\/fluid_page_cache"
+    },
+    "ns_news_advancedsearch": {
+      "composer_name": "nitsan\/ns-news-advancedsearch"
+    },
+    "em_form_repeatablesave": {
+      "composer_name": "extrameile\/em_form_repeatablesave"
+    },
+    "ns_backup": {
+      "composer_name": "nitsan\/ns-backup"
+    },
+    "mask_kesearch_indexer": {
+      "composer_name": "zwo3\/mask_kesearch_indexer"
+    },
+    "ns_google_map": {
+      "composer_name": "nitsan\/ns-google-map"
+    },
+    "consentmanager": {
+      "composer_name": "jolution\/consentmanager"
+    },
+    "fal_quota": {
+      "composer_name": "mehrwert\/fal-quota"
+    },
+    "ns_cookies": {
+      "composer_name": "nitsan\/ns-cookies"
+    },
+    "ns_comments": {
+      "composer_name": "nitsan\/ns-comments"
+    },
+    "newsletter_subscribe": {
+      "composer_name": "zwo3\/newsletter_subscribe"
+    },
+    "numbered_pagination": {
+      "composer_name": "georgringer\/numbered-pagination"
+    },
+    "jobapplications": {
+      "composer_name": "itx\/jobapplications"
+    },
+    "walls_io_proxy": {
+      "composer_name": "jweiland\/walls-io-proxy"
+    },
+    "typo3_encore": {
+      "composer_name": "ssch\/typo3-encore"
+    },
+    "sitecrawler": {
+      "composer_name": "schliesser\/sitecrawler"
+    },
+    "z7_semantilizer": {
+      "composer_name": "zeroseven\/z7-semantilizer"
+    },
+    "mentor_finder": {
+      "composer_name": "gi\/mentor-finder"
+    },
+    "toolbar_clear_processedfiles": {
+      "composer_name": "josefglatz\/toolbar-clear-processedfiles"
+    },
+    "jobrouter_process": {
+      "composer_name": "brotkrueml\/typo3-jobrouter-process"
+    },
+    "mmc_extbasewsutility": {
+      "composer_name": "mmc\/extbasewsutility"
+    },
+    "onetimesecret": {
+      "composer_name": "zwo3\/onetimesecret"
+    },
+    "pxa_data_provider": {
+      "composer_name": "pixelant\/pxa-data-provider"
+    },
+    "ns_revolution_slider": {
+      "composer_name": "nitsan\/ns-revolution-slider"
+    },
+    "em_tvplus_yoast": {
+      "composer_name": "extrameile\/em_tvplus_yoast"
+    },
+    "ifab_realestate": {
+      "composer_name": "ifabrik\/ifab-realestate"
+    },
+    "pn_uniform_product_names": {
+      "composer_name": "proudnerds-typo3\/pn-uniform-product-names"
+    },
+    "fe_data_history": {
+      "composer_name": "sudhaus7\/fe-data-history"
+    },
+    "ke_search_orgnews_xblog": {
+      "composer_name": "netzmacher\/ke_search_orgnews_xblog"
+    },
+    "ke_search_orgcal_xblog": {
+      "composer_name": "netzmacher\/ke_search_orgcal_xblog"
+    },
+    "cli_browser": {
+      "composer_name": "kitzberger\/cli-browser"
+    },
+    "ke_search_orgnews_browser": {
+      "composer_name": "netzmacher\/ke_search_orgnews_browser"
+    },
+    "ke_search_orgcal_browser": {
+      "composer_name": "netzmacher\/ke_search_orgcal_browser"
+    },
+    "cart_news": {
+      "composer_name": "extcode\/cart-news"
+    },
+    "flux_kesearch_indexer": {
+      "composer_name": "mamounalsmaiel\/flux-kesearch-indexer"
+    },
+    "fire_department": {
+      "composer_name": "kanow\/fire-department"
+    },
+    "ns_faq": {
+      "composer_name": "nitsan\/ns-faq"
+    },
+    "t3_fpdi": {
+      "composer_name": "netzmacher\/t3_fpdi"
+    },
+    "headless_gridelements": {
+      "composer_name": "itplusx\/headless-gridelements"
+    },
+    "we_cookie_consent": {
+      "composer_name": "websedit\/we-cookie-consent"
+    },
+    "xlsimport": {
+      "composer_name": "sudhaus7\/xlsimport"
+    },
+    "mfa_hotp": {
+      "composer_name": "o-ba\/mfa-hotp"
+    },
+    "ws_slider": {
+      "composer_name": "svewap\/ws-slider"
+    },
+    "form_mailtext": {
+      "composer_name": "kitzberger\/form-mailtext"
+    },
+    "t3security_news_widget": {
+      "composer_name": "o-ba\/t3security_news_widget"
+    },
+    "vierwd_base": {
+      "composer_name": "vierwd\/typo3-base"
+    },
+    "sudo_mode": {
+      "composer_name": "friendsoftypo3\/sudo-mode"
+    },
+    "site_generator": {
+      "composer_name": "oktopuce\/site-generator"
+    },
+    "flux_elements": {
+      "composer_name": "buepro\/typo3-flux-elements"
+    },
+    "flexible_news": {
+      "composer_name": "itplusx\/flexible-news"
+    },
+    "t3extensions_widget": {
+      "composer_name": "schams-net\/t3extensions-widget"
+    },
+    "content_slug": {
+      "composer_name": "sebkln\/content-slug"
+    },
+    "flogin": {
+      "composer_name": "lms\/flogin"
+    },
+    "wv_deepltranslate": {
+      "composer_name": "web-vision\/wv_deepltranslate"
+    },
+    "schema_virtuallocation": {
+      "composer_name": "brotkrueml\/schema-virtuallocation"
+    },
+    "patchcache": {
+      "composer_name": "bugfix\/patchcache"
+    },
+    "custom_dashboard_widgets": {
+      "composer_name": "o-ba\/custom_dashboard_widgets"
+    },
+    "pizpalue_distribution": {
+      "composer_name": "buepro\/typo3-pizpalue-distribution"
+    },
+    "responsive_picture": {
+      "composer_name": "sudhaus7\/responsive-picture"
+    },
+    "trello_integration": {
+      "composer_name": "crontis\/trello-integration"
+    },
+    "wv_file_cleanup": {
+      "composer_name": "web-vision\/wv_file_cleanup"
+    },
+    "cidaas": {
+      "composer_name": "cidaas\/cidaas-for-typo3"
+    },
+    "social_gdpr": {
+      "composer_name": "ichhabrecht\/social-gdpr"
+    },
+    "sync_crop_areas": {
+      "composer_name": "jweiland\/sync-crop-areas"
+    },
+    "jobrouter_rss_widgets": {
+      "composer_name": "brotkrueml\/typo3-jobrouter-rss-widgets"
+    },
+    "mail_conf_override": {
+      "composer_name": "extcode\/mail-conf-override"
+    },
+    "ns_googledocs": {
+      "composer_name": "nitsan\/ns-googledocs"
+    },
+    "wechange": {
+      "composer_name": "jazzica\/wechange"
+    },
+    "t3oodle": {
+      "composer_name": "fgtclb\/t3oodle"
+    },
+    "reserve": {
+      "composer_name": "jweiland\/reserve"
+    },
+    "modern_template_building": {
+      "composer_name": "bmack\/modern-template-building"
+    },
+    "randomizer": {
+      "composer_name": "mhuber84\/randomizer"
+    },
+    "bw_focuspoint_images": {
+      "composer_name": "blueways\/bw-focuspoint-images"
+    },
+    "ns_feedback": {
+      "composer_name": "nitsan\/ns-feedback"
+    },
+    "oauth2_server": {
+      "composer_name": "r3h6\/oauth2-server"
+    },
+    "form_fieldnames": {
+      "composer_name": "mediatis\/form_fieldnames"
+    },
+    "int_park": {
+      "composer_name": "onm\/int-park"
+    },
+    "awesomeicons": {
+      "composer_name": "t3brightside\/awesomeicons"
+    },
+    "excelbill_tt_products": {
+      "composer_name": "jambagecom\/excelbill-tt-products"
+    },
+    "shortcutlink": {
+      "composer_name": "sudhaus7\/shortcutlink"
+    },
+    "rss_app": {
+      "composer_name": "codingms\/rss-app"
+    },
+    "google_drive_fal": {
+      "composer_name": "mabolek\/google-drive-fal"
+    },
+    "container_example": {
+      "composer_name": "b13\/container-example"
+    },
+    "pxa_lpeh": {
+      "composer_name": "pixelant\/pxa-lpeh"
+    },
+    "pxa_dealers": {
+      "composer_name": "pixelant\/pxa-dealers"
+    },
+    "ns_theme_newage": {
+      "composer_name": "nitsan\/ns-theme-newage"
+    },
+    "additional_tca": {
+      "composer_name": "codingms\/additional-tca"
+    },
+    "matomo_widgets": {
+      "composer_name": "brotkrueml\/typo3-matomo-widgets"
+    },
+    "redirect2trailingslash": {
+      "composer_name": "studiomitte\/redirect2trailingslash"
+    },
+    "textile": {
+      "composer_name": "simonkoehler\/textile"
+    },
+    "mindshape_cookie_consent": {
+      "composer_name": "mindshape\/mindshape-cookie-consent"
+    },
+    "matomoapi": {
+      "composer_name": "famouswolf\/matomoapi"
+    },
+    "mask_permissions": {
+      "composer_name": "hov\/mask-permissions"
+    },
+    "md_calendarize_frontend": {
+      "composer_name": "mediadreams\/md_calendarize_frontend"
+    },
+    "tcabuilder": {
+      "composer_name": "spooner-web\/tcabuilder"
+    },
+    "slug_extbase": {
+      "composer_name": "spooner-web\/slug-extbase"
+    },
+    "openweather": {
+      "composer_name": "ashokatree\/openweather"
+    },
+    "accuweather": {
+      "composer_name": "ashokatree\/accuweather"
+    },
+    "dm_schema": {
+      "composer_name": "die-medialen\/dm-schema"
+    },
+    "language_detection": {
+      "composer_name": "lochmueller\/language-detection"
+    },
+    "z7_blog": {
+      "composer_name": "zeroseven\/z7-blog"
+    },
+    "z7_blog_rss": {
+      "composer_name": "zeroseven\/z7-blog-rss"
+    },
+    "mfa_yubikey": {
+      "composer_name": "derhansen\/mfa_yubikey"
+    },
+    "readmorelink": {
+      "composer_name": "mdy\/readmorelink"
+    },
+    "ns_gallery": {
+      "composer_name": "nitsan\/ns-gallery"
+    },
+    "jobrouter_base": {
+      "composer_name": "brotkrueml\/typo3-jobrouter-base"
+    },
+    "at_vslider": {
+      "composer_name": "ashokatree\/atvslider"
+    },
+    "static_info_tables_re_add_iso": {
+      "composer_name": "renolit\/static-info-tables-re-add-iso"
+    },
+    "defbu_authenticator": {
+      "composer_name": "defbu\/authenticator"
+    },
+    "sg_replacement": {
+      "composer_name": "smplygd\/sg-replacement"
+    },
+    "t2_scss": {
+      "composer_name": "trafo2\/t2_scss"
+    },
+    "weather_widget": {
+      "composer_name": "svenjuergens\/weather-widget"
+    },
+    "dp_http2": {
+      "composer_name": "dirkpersky\/typo3-dp_http2"
+    },
+    "sms77typo3": {
+      "composer_name": "sms77\/sms77typo3"
+    },
+    "wp_falcleaner": {
+      "composer_name": "webprofil\/wp-falcleaner"
+    },
+    "authorized_preview": {
+      "composer_name": "b13\/authorized-preview"
+    },
+    "aimeos_t3skin": {
+      "composer_name": "sonority\/aimeos-t3skin"
+    },
+    "jv_add2group": {
+      "composer_name": "jvelletti\/jv-add2group"
+    },
+    "tt_products_foundby": {
+      "composer_name": "jambagecom\/tt-products-foundby"
+    },
+    "gatedcontent": {
+      "composer_name": "dpool\/gatedcontent"
+    },
+    "calendarize_address": {
+      "composer_name": "andreaskastl\/calendarize-address"
+    },
+    "store_inventory": {
+      "composer_name": "t3docs\/store-inventory"
+    },
+    "bypassemailsendlimitation": {
+      "composer_name": "cylancer\/bypassemailsendlimitation"
+    },
+    "xlsexport": {
+      "composer_name": "calien\/xlsexport"
+    },
+    "host_variants": {
+      "composer_name": "b13\/host-variants"
+    },
+    "oidc_server": {
+      "composer_name": "r3h6\/oidc-server"
+    },
+    "content_owners": {
+      "composer_name": "jansass\/content-owners"
+    },
+    "mysql_widget": {
+      "composer_name": "stefanfroemken\/mysql-widget"
+    },
+    "matomo_optout": {
+      "composer_name": "brotkrueml\/typo3-matomo-optout"
+    },
+    "plesk_widget": {
+      "composer_name": "stefanfroemken\/plesk-widget"
+    },
+    "tnm_gha_demo": {
+      "composer_name": "tomasnorre\/tnm-gha-demo"
+    },
+    "id_stock_pictures": {
+      "composer_name": "ideative\/stock-pictures"
+    },
+    "id_shutterstock_connector": {
+      "composer_name": "ideative\/shutterstock-connector"
+    },
+    "id_unsplash_connector": {
+      "composer_name": "ideative\/unsplash-connector"
+    },
+    "csv_labels": {
+      "composer_name": "sitegeist\/csv-labels"
+    },
+    "page_callouts": {
+      "composer_name": "sypets\/page-callouts"
+    },
+    "paste_reference": {
+      "composer_name": "ehaerer\/paste-reference"
+    },
+    "redirect2pagetypesuffix": {
+      "composer_name": "hziegenhain\/redirect2pagetypesuffix"
+    },
+    "upmediatotextmedia": {
+      "composer_name": "verdigado\/upmediatotextmedia"
+    },
+    "yawave": {
+      "composer_name": "yawave-sdks\/yawave"
+    },
+    "form_element_linked_checkbox": {
+      "composer_name": "tritum\/form-element-linked-checkbox"
+    },
+    "mfa_sms": {
+      "composer_name": "different-technology\/mfa-sms"
+    },
+    "ns_helpdesk": {
+      "composer_name": "nitsan\/ns-helpdesk"
+    },
+    "upmailformtoformlegacy": {
+      "composer_name": "verdigado\/upmailformtoformlegacy"
+    },
+    "legal_web_typo3": {
+      "composer_name": "legalwebio\/legal-web-typo3"
+    }
+  }
+}

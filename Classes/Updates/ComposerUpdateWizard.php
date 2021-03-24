@@ -120,6 +120,7 @@ final class ComposerUpdateWizard implements ChattyInterface, UpgradeWizardInterf
                 ];
 
                 $fs->dumpFile($extPath . DIRECTORY_SEPARATOR . 'composer.json', json_encode($composerJson, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+
                 $fs->rename($extPath, 'typo3-local/' . $extKey);
                 var_dump($packageName);
                 $composerService->require([$packageName . ':@dev']);
