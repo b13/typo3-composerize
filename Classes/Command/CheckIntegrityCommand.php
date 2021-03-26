@@ -14,7 +14,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class CheckIntegrityCommand extends Command
 {
-    protected static $defaultName = 'check-integrity';
+    protected static $defaultName = 'check';
 
     protected function configure()
     {
@@ -36,10 +36,10 @@ class CheckIntegrityCommand extends Command
         $tableRows = [];
         foreach ($extensions as $extension) {
             $tableRows[] = [
-                "ext-key" => $extension['ext-key'],
-                "composer-json" => $extension['composer-json'] ? '<fg=green>yes</>' : '<fg=red>no</>',
-                "extra-extension-key" => $extension['extra-extension-key'] ? '<fg=green>yes</>' : '<fg=red>no</>',
-                "package-name" => $extension['package-name'] ? $extension['package-name'] : '<fg=red>Preview: ' . ComposerConvertUtility::convertToPackageName($extension['ext-key']) . '</>',
+                'ext-key' => $extension['ext-key'],
+                'composer-json' => $extension['composer-json'] ? '<fg=green>yes</>' : '<fg=red>no</>',
+                'extra-extension-key' => $extension['extra-extension-key'] ? '<fg=green>yes</>' : '<fg=red>no</>',
+                'package-name' => $extension['package-name'] ? $extension['package-name'] : '<fg=red>Preview: ' . ComposerConvertUtility::convertToPackageName($extension['ext-key']) . '</>',
             ];
         }
 
