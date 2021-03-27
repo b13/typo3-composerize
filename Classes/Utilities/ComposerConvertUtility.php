@@ -65,9 +65,16 @@ class ComposerConvertUtility
         $this->filesystem = new Filesystem();
     }
 
-    public function validateExtensions(array $checkExtensions): array
+    /**
+     * Validate extensions for composer compatibility
+     *
+     * @param array $checkExtensions
+     * @param string[] $folders
+     * @return array
+     */
+    public function validateExtensions(array $checkExtensions, $folders = ['typo3conf/ext/', 'typo3/sysext/']): array
     {
-        $allExtensions = $this->getExtensions();
+        $allExtensions = $this->getExtensions($folders);
 
         $extensions = [];
         if ($allExtensions->hasResults()) {
@@ -108,7 +115,12 @@ class ComposerConvertUtility
         return $extensions;
     }
 
-    public function convertEmconfToComposer($extPath, $resultFilename = 'composer.json')
+    /**
+     * @param string $extPath
+     * @param string $resultFilename
+     * @return string
+     */
+    public function convertEmconfToComposer(string $extPath, $resultFilename = 'composer.json'): string
     {
         $extKey = basename($extPath);
         $emConf = $this->loadEmConf($extKey, $extPath);
@@ -131,8 +143,8 @@ class ComposerConvertUtility
             'type' => 'typo3-cms-extension',
             'authors' => [
                 [
-                    'name' => $emConf['author'],
-                    'email' => $emConf['author_email'],
+                    'name' => $emConf['author'] ?? '',
+                    'email' => $emConf['author_email'] ?? 'no-email@given.com',
                 ]
             ],
             'require' => $depends ?? (object)null,
@@ -150,6 +162,8 @@ class ComposerConvertUtility
         ];
 
         $this->filesystem->filePutContentsIfModified($extPath . '/' . $resultFilename, json_encode($composerJson, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+
+        return $extPath . '/' . $resultFilename;
     }
 
     /**
@@ -192,9 +206,14 @@ class ComposerConvertUtility
         return self::convertToPackageName($extKey);
     }
 
-    public function convertConstraint($key, $versions): array
+    /**
+     * @param string $extKey
+     * @param string $versions
+     * @return array
+     */
+    public function convertConstraint(string $extKey, string $versions): array
     {
-        $packageName = $this->getPackageName($key);
+        $packageName = $this->getPackageName($extKey);
 
         // Set * if package is empty or a local package
         if (empty($versions) || preg_match('/^typo3-local\/(.*)/', $packageName)) {
@@ -221,16 +240,26 @@ class ComposerConvertUtility
     }
 
     /**
+     * @param string[] $folders
      * @return Finder
      */
-    private function getExtensions(): Finder
+    public function getExtensions($folders = ['typo3conf/ext/', 'typo3/sysext/']): Finder
     {
         $finder = Finder::create();
-        $finder->directories()->depth(0)->in($this->docRoot . '/typo3conf/ext/')->in($this->docRoot . '/typo3/sysext/');
+        $finder->directories()->depth(0);
+
+        foreach ($folders as $folder) {
+            $finder->in($this->docRoot . '/' . $folder);
+        }
+
         return $finder;
     }
 
-    public static function convertToPackageName($extKey): string
+    /**
+     * @param string $extKey
+     * @return string
+     */
+    public static function convertToPackageName(string $extKey): string
     {
         return 'typo3-local/' . str_replace('_', '-', $extKey);
     }
@@ -250,7 +279,6 @@ class ComposerConvertUtility
      */
     public function getExtensionClassMap(string $extPath): array
     {
-        // TODO: Check if dependency here is ok?!
         $classMap = ClassMapGenerator::createMap($extPath);
         $path = realpath($extPath);
 

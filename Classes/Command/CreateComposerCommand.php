@@ -5,10 +5,13 @@ declare(strict_types=1);
 namespace B13\Typo3Composerize\Command;
 
 use B13\Typo3Composerize\Utilities\ComposerConvertUtility;
+use Composer\Console\Application;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Filesystem\Exception\IOException;
 
@@ -35,8 +38,23 @@ class CreateComposerCommand extends Command
 
         foreach ($extensions as $extension) {
             if (!$extension['extra-extension-key'] && !$extension['composer-json']) {
-                $utility->convertEmconfToComposer($extension['path']);
-                $output->writeln('<fg=green>OK</> EXT:' . $extension['ext-key'] . ' Convert ext_emconf.php to composer.json');
+                $pathComposer = $utility->convertEmconfToComposer($extension['path']);
+
+                // Validate generated composer.json
+                putenv('COMPOSER=' . $pathComposer);
+                $bufferedOutput = new BufferedOutput();
+                $validate = new ArrayInput(['command' => 'validate']);
+                $checkApplication = new Application();
+                $checkApplication->setAutoExit(false);
+                $state = $checkApplication->run($validate, $bufferedOutput);
+
+                if ($state) {
+                    $output->writeln('<fg=red>ERROR</> EXT:' . $extension['ext-key'] . ' Validation failed, make sure you have set all values in ext_emconf.php properly' . PHP_EOL . $bufferedOutput->fetch());
+                    unlink($pathComposer);
+                } else {
+                    $output->writeln('<fg=green>OK</> EXT:' . $extension['ext-key'] . ' Converted ext_emconf.php to valid composer.json');
+                }
+
                 continue;
             }
 

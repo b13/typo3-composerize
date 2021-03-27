@@ -1,0 +1,35 @@
+{
+    "name": "typo3-local/sample-extension",
+    "description": "Sample Extension - Extension for testing composer",
+    "license": "GPL-2.0-or-later",
+    "type": "typo3-cms-extension",
+    "authors": [
+        {
+            "name": "Sample Author",
+            "email": "sample@author.com"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "~7 || ~8 || ~9",
+        "typo3/cms-beuser": "*",
+        "php": "~7 || ~8 || ~9"
+    },
+    "suggest": {
+        "typo3/cms-workspaces": "*"
+    },
+    "conflict": {
+        "georgringer/news": "~8"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "sample_extension"
+        }
+    },
+    "version": "dev-local",
+    "autoload": {
+        "classmap": [
+            "Php/AnotherClass.php",
+            "Classes/SampleClass.php"
+        ]
+    }
+}

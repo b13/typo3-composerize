@@ -1,0 +1,22 @@
+{
+  "name": "b13/third-extension",
+  "type": "typo3-cms-extension",
+  "description": "Sample composer.json for running tests",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Sample name",
+      "role": "Developer",
+      "homepage": "https://b13.com"
+    }
+  ],
+  "require": {},
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "third_extension"
+    },
+    "branch-alias": {
+      "dev-master": "11.2.x-dev"
+    }
+  }
+}
