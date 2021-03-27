@@ -22,6 +22,7 @@ class CheckIntegrityCommand extends Command
             ->setHelp('Check TYPO3 extensions for composer compatability.');
         $this->addArgument('extension', InputArgument::OPTIONAL, 'Path to the TYPO3 Project');
         $this->addOption('doc-root', 'd', InputOption::VALUE_REQUIRED, 'Path to the TYPO3 project document root', '.');
+        $this->addOption('folders', 'f', InputOption::VALUE_OPTIONAL | InputOption::VALUE_IS_ARRAY, 'Paths to scan for extensions relative to doc-root', ['typo3conf/ext/', 'typo3/sysext/']);
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -29,8 +30,9 @@ class CheckIntegrityCommand extends Command
         $extension = $input->getArgument('extension');
         $extensionArray = is_null($extension) ? [] : explode(',', $extension);
         $docRoot = $input->getOption('doc-root');
+        $folders = $input->getOption('folders');
 
-        $utility = new ComposerConvertUtility($docRoot);
+        $utility = new ComposerConvertUtility($docRoot, $folders);
         $extensions = $utility->validateExtensions($extensionArray);
 
         $tableRows = [];

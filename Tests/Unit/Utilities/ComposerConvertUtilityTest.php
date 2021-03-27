@@ -18,7 +18,7 @@ final class ComposerConvertUtilityTest extends TestCase
     public function setUp(): void
     {
         $this->extensionPath = __DIR__ . '/../../Fixtures/sample_extension';
-        $this->utility = new ComposerConvertUtility(__DIR__ . '/../../Fixtures/');
+        $this->utility = new ComposerConvertUtility(__DIR__ . '/../../Fixtures/', ['.']);
 
         parent::setUp();
     }

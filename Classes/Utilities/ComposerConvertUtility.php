@@ -55,13 +55,15 @@ class ComposerConvertUtility
 
     protected array $terComposerMap = [];
     protected string $docRoot;
+    protected array $folders;
 
     protected Filesystem $filesystem;
 
-    public function __construct(string $docRoot)
+    public function __construct(string $docRoot, $folders = ['typo3conf/ext/', 'typo3/sysext/'])
     {
         $this->terComposerMap = json_decode(file_get_contents(__DIR__ . '/../../Static/typo3-ter-composer-map.json'), true);
         $this->docRoot = $docRoot;
+        $this->folders = $folders;
         $this->filesystem = new Filesystem();
     }
 
@@ -72,9 +74,9 @@ class ComposerConvertUtility
      * @param string[] $folders
      * @return array
      */
-    public function validateExtensions(array $checkExtensions, $folders = ['typo3conf/ext/', 'typo3/sysext/']): array
+    public function validateExtensions(array $checkExtensions): array
     {
-        $allExtensions = $this->getExtensions($folders);
+        $allExtensions = $this->getExtensions();
 
         $extensions = [];
         if ($allExtensions->hasResults()) {
@@ -240,15 +242,14 @@ class ComposerConvertUtility
     }
 
     /**
-     * @param string[] $folders
      * @return Finder
      */
-    public function getExtensions($folders = ['typo3conf/ext/', 'typo3/sysext/']): Finder
+    public function getExtensions(): Finder
     {
         $finder = Finder::create();
         $finder->directories()->depth(0);
 
-        foreach ($folders as $folder) {
+        foreach ($this->folders as $folder) {
             $finder->in($this->docRoot . '/' . $folder);
         }
 
