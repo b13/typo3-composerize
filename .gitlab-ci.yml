@@ -34,14 +34,26 @@ php-cs-fixer:
 phpunit:7.4:
   image: registry.b13.com/jroth/typo3_composerize:php74
   stage: test
+  artifacts:
+    when: always
+    paths:
+      - phpunit-report.xml
+    reports:
+      junit: phpunit-report.xml
   script:
-    - ./vendor/bin/phpunit --coverage-text
+    - ./vendor/bin/phpunit --coverage-text --log-junit phpunit-report.xml
 
 phpunit:8.0:
   image: registry.b13.com/jroth/typo3_composerize:php80
   stage: test
+  artifacts:
+    when: always
+    paths:
+      - phpunit-report.xml
+    reports:
+      junit: phpunit-report.xml
   script:
-    - ./vendor/bin/phpunit --coverage-text
+    - ./vendor/bin/phpunit --coverage-text --log-junit phpunit-report.xml
 
 publish:
   image: curlimages/curl:latest
