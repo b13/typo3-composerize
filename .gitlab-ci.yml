@@ -42,16 +42,10 @@ phpunit:7.4:
   image: registry.b13.com/jroth/typo3_composerize:php74
   stage: test
   script:
-#    - pecl install xdebug
-#    - docker-php-ext-enable xdebug
-#    - echo "xdebug.mode=coverage" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
     - ./vendor/bin/phpunit --coverage-text
 
 phpunit:8.0:
-  image: php:8.0
+  image: registry.b13.com/jroth/typo3_composerize:php80
   stage: test
   script:
-#    - pecl install xdebug
-#    - docker-php-ext-enable xdebug
-#    - echo "xdebug.mode=coverage" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
     - ./vendor/bin/phpunit --coverage-text
