@@ -31,7 +31,7 @@ php-cs-fixer:
   script:
     - ./vendor/bin/php-cs-fixer fix -v --dry-run --diff --using-cache false
 
-phpunit:7.4:
+.phpunit: &phpunit
   image: registry.b13.com/jroth/typo3_composerize:php74
   stage: test
   artifacts:
@@ -43,17 +43,13 @@ phpunit:7.4:
   script:
     - ./vendor/bin/phpunit --coverage-text --log-junit phpunit-report.xml
 
+phpunit:7.4:
+  image: registry.b13.com/jroth/typo3_composerize:php74
+  <<: *phpunit
+
 phpunit:8.0:
   image: registry.b13.com/jroth/typo3_composerize:php80
-  stage: test
-  artifacts:
-    when: always
-    paths:
-      - phpunit-report.xml
-    reports:
-      junit: phpunit-report.xml
-  script:
-    - ./vendor/bin/phpunit --coverage-text --log-junit phpunit-report.xml
+  <<: *phpunit
 
 publish:
   image: curlimages/curl:latest
