@@ -42,10 +42,10 @@ phpunit:7.4:
   image: php:7.4
   stage: test
   script:
-    - ./vendor/bin/phpunit
+    - ./vendor/bin/phpunit --coverage-text
 
 phpunit:8.0:
   image: php:8.0
   stage: test
   script:
-    - ./vendor/bin/phpunit
+    - ./vendor/bin/phpunit --coverage-text
