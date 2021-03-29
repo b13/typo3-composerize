@@ -42,10 +42,14 @@ phpunit:7.4:
   image: php:7.4
   stage: test
   script:
+    - pecl install xdebug
+    - docker-php-ext-enable xdebug
     - ./vendor/bin/phpunit --coverage-text
 
 phpunit:8.0:
   image: php:8.0
   stage: test
   script:
+    - pecl install xdebug
+    - docker-php-ext-enable xdebug
     - ./vendor/bin/phpunit --coverage-text
