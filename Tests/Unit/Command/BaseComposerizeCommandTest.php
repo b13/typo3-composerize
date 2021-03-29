@@ -30,16 +30,16 @@ final class BaseComposerizeCommandTest extends TestCase
         $arguments = $baseCommand->getArguments($this->commandTester->getInput());
 
         // Test extension argument
-        $this->assertIsArray($arguments[0]);
-        $this->assertIsString($arguments[0][0]);
-        $this->assertIsString($arguments[0][1]);
+        self::assertIsArray($arguments[0]);
+        self::assertIsString($arguments[0][0]);
+        self::assertIsString($arguments[0][1]);
 
         // Test -d (doc-root) option
-        $this->assertFileExists($arguments[1]);
+        self::assertFileExists($arguments[1]);
 
         // Test -f (folders) option
-        $this->assertIsArray($arguments[2]);
-        $this->assertIsString($arguments[2][0]);
-        $this->assertIsString($arguments[2][1]);
+        self::assertIsArray($arguments[2]);
+        self::assertIsString($arguments[2][0]);
+        self::assertIsString($arguments[2][1]);
     }
 }

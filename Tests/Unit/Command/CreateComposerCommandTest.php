@@ -31,7 +31,7 @@ OK EXT:third_extension - No update required
 OK EXT:second_extension Converted ext_emconf.php to valid composer.json
 EOF;
 
-        $this->assertEquals($expectedResult, trim($this->commandTester->getDisplay()));
+        self::assertEquals($expectedResult, trim($this->commandTester->getDisplay()));
     }
 
     protected function tearDown(): void

@@ -34,6 +34,6 @@ final class CheckIntegrityCommandTest extends TestCase
 +------------------+-----------------+--------------------------------------+---------------------------------------+
 EOF;
 
-        $this->assertEquals($expectedResult, trim($this->commandTester->getDisplay()));
+        self::assertEquals($expectedResult, trim($this->commandTester->getDisplay()));
     }
 }
