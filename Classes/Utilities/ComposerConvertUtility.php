@@ -21,6 +21,7 @@ class ComposerConvertUtility
         'form' => 'typo3/cms-form',
         'install' => 'typo3/cms-install',
         'core' => 'typo3/cms-core',
+        'cms' => 'typo3/cms-core',
         'frontend' => 'typo3/cms-frontend',
         'felogin' => 'typo3/cms-felogin',
         'setup' => 'typo3/cms-setup',
