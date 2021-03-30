@@ -44,7 +44,7 @@ class CreateComposerCommand extends BaseComposerizeCommand
 
                 if ($state) {
                     $output->writeln('<fg=red>ERROR</> EXT:' . $extension['ext-key'] . ' Validation failed, make sure you have set all values in ext_emconf.php properly' . PHP_EOL . $bufferedOutput->fetch());
-                    unlink($pathComposer);
+                    @unlink($pathComposer);
                 } else {
                     $output->writeln('<fg=green>OK</> EXT:' . $extension['ext-key'] . ' Converted ext_emconf.php to valid composer.json');
                 }

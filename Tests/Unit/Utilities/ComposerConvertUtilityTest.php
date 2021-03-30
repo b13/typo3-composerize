@@ -48,18 +48,23 @@ final class ComposerConvertUtilityTest extends TestCase
 
     public function testGetExtensions(): void
     {
-        self::assertCount(3, $this->utility->getExtensions(['./']));
+        self::assertCount(3, $this->utility->getExtensions());
     }
 
     public function testConvertEmconfToComposer(): void
     {
         $this->utility->convertEmconfToComposer($this->extensionPath, self::EMCONF_CONVERTED_JSON_FILE);
-
-        // TODO: Add more asserts
-        //        self::assertFileEquals($this->extensionPath . '/emconf-composer-expected.json', $this->extensionPath . '/' . self::EMCONF_CONVERTED_JSON_FILE);
         $composerJson = json_decode(file_get_contents($this->extensionPath . '/' . self::EMCONF_CONVERTED_JSON_FILE), true);
 
+        self::assertEquals([
+            'typo3/cms-core' => '~8 || ~9 || ~10',
+            'typo3/cms-beuser' => '*',
+            'php' => '~7'
+        ], $composerJson['require']);
+
         self::assertEquals('sample_extension', $composerJson['extra']['typo3/cms']['extension-key']);
+        self::assertContains('Php/AnotherClass.php', $composerJson['autoload']['classmap']);
+        self::assertContains('Classes/SampleClass.php', $composerJson['autoload']['classmap']);
     }
 
     public function testConvertToPackageName(): void

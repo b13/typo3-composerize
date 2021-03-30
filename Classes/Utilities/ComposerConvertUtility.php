@@ -132,11 +132,12 @@ class ComposerConvertUtility
             unset($$constraint);
             if (!empty($emConf['constraints'][$constraint])) {
                 foreach ($emConf['constraints'][$constraint] as $key => $version) {
-                    list($key, $version) = $this->convertConstraint($key, $version);
-                    $$constraint[$key] = $version;
+                    list($currentKey, $currentVersion) = $this->convertConstraint($key, $version);
+                    $$constraint[$currentKey] = $currentVersion;
                 }
             }
         }
+
         $packageName = $this->getPackageName($extKey);
         $composerJson = [
             'name' => $packageName,
@@ -231,7 +232,7 @@ class ComposerConvertUtility
 
         $constraint = [];
         if (count($versionNumbers) === 2) {
-            foreach (range(7, 9) as $version) {
+            foreach (range($versionNumbers[0], $versionNumbers[1]) as $version) {
                 $constraint[] = '~' . $version;
             }
         } else {
