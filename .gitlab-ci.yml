@@ -5,11 +5,6 @@ stages:
   - build
   - publish
 
-before_script:
-  # Gitlab Package Versioning is not working with certain version string e.g. v0.0.1
-  - export GITLAB_RELEASE_VERSION=$(echo "${CI_COMMIT_TAG}" | sed 's/[^0-9\.]//g')
-  - export PACKAGE_REGISTRY_URL="${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/typo3-composerize/${GITLAB_RELEASE_VERSION}"
-
 variables:
   PHAR_ARTIFACT_NAME: "typo3-composerize"
   PHAR_FILE_NAME: "typo3-composerize.phar"
@@ -57,6 +52,23 @@ phpunit:8.0:
   image: registry.b13.com/jroth/typo3_composerize:php80
   <<: *phpunit
 
+create-phar:
+  image: composer:2
+  stage: build
+  dependencies:
+    - composer_install
+  script:
+    - composer install --no-dev
+    - composer global config minimum-stability dev
+    - composer global require humbug/box
+    - /tmp/vendor/bin/box compile
+  artifacts:
+    untracked: true
+    name: $PHAR_ARTIFACT_NAME
+    paths:
+      - ./build/$PHAR_FILE_NAME
+    expire_in: 14 day
+
 publish-package:
   image: curlimages/curl:latest
   stage: publish
@@ -77,39 +89,3 @@ publish-package:
       echo "Could not create package - Code $code - $body";
       exit 1;
       fi
-
-create-phar:
-  image: composer:2
-  stage: build
-  needs: ["composer_install", "php-cs-fixer", 'php_stan']
-  script:
-    - composer install --no-dev
-    - composer global config minimum-stability dev
-    - composer global require humbug/box
-    - /tmp/vendor/bin/box compile
-  artifacts:
-    name: $PHAR_ARTIFACT_NAME
-    paths:
-      - ./build/$PHAR_FILE_NAME
-    expire_in: 1 day
-
-upload-phar:
-  stage: upload
-  image: curlimages/curl:latest
-  rules:
-    - if: $CI_COMMIT_TAG
-  script:
-    - |
-      curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file ./build/${PHAR_FILE_NAME} ${PACKAGE_REGISTRY_URL}/${PHAR_FILE_NAME}
-
-publish-phar:
-  stage: publish
-  image: registry.gitlab.com/gitlab-org/release-cli:latest
-  needs: ["create-phar"]
-  rules:
-    - if: $CI_COMMIT_TAG
-  script:
-    - |
-      release-cli create --name "Release $CI_COMMIT_TAG" --tag-name $CI_COMMIT_TAG \
-        --description "Automated Release $CI_COMMIT_TAG" \
-        --assets-link "{\"name\":\"${PHAR_FILE_NAME}\",\"url\":\"${PACKAGE_REGISTRY_URL}/${PHAR_FILE_NAME}\"}"
