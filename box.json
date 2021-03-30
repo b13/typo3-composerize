@@ -1,0 +1,18 @@
+{
+  "directories": ["Classes", "Static"],
+  "files": [
+    "README.md",
+    "typo3-composerize"
+  ],
+  "finder": [
+    {
+      "notName": "/.*\\.md|.*\\.dist|Makefile|composer\\.json|composer\\.lock/",
+      "exclude": ["Tests", "tests", "doc", "docs", "Fixtures", "bin"],
+      "in": "vendor"
+    }
+  ],
+  "chmod": "0700",
+  "git-version": "package_version",
+  "compression": "GZ",
+  "output": "build/typo3-composerize.phar"
+}
