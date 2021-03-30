@@ -63,7 +63,6 @@ create-phar:
     - composer global require humbug/box
     - /tmp/vendor/bin/box compile
   artifacts:
-    untracked: true
     name: $PHAR_ARTIFACT_NAME
     paths:
       - ./build/$PHAR_FILE_NAME
