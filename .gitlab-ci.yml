@@ -29,10 +29,6 @@ php_stan:
   needs: ["composer_install"]
   script:
     - ./vendor/bin/phpstan analyse --no-progress Classes/ Tests/Unit
-  artifacts:
-    reports:
-      codequality: gl-phpstan-report.json
-    paths: [gl-phpstan-report.json]
 
 php-cs-fixer:
   image: composer:2
