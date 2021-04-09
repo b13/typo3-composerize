@@ -67,85 +67,11 @@ final class ComposerConvertUtilityTest extends TestCase
         self::assertContains('Classes/SampleClass.php', $composerJson['autoload']['classmap']);
     }
 
-    public function testConvertToPackageName(): void
-    {
-        self::assertSame(
-            'typo3-local/my-extension',
-            ComposerConvertUtility::convertToPackageName('my_extension')
-        );
-    }
-
     public function testSetExtensionKey(): void
     {
         $this->utility->setExtensionKey($this->extensionPath, 'sample_extension', self::UPDATED_JSON_FILE);
 
         self::assertFileEquals($this->extensionPath . '/composer_expected.json', $this->extensionPath . '/' . self::UPDATED_JSON_FILE);
-    }
-
-    public function testGetPackageName(): void
-    {
-        // Test to get composer package name from TER
-        self::assertSame(
-            'georgringer/news',
-            $this->utility->getPackageName('news')
-        );
-
-        // Test to get composer package name from map
-        self::assertSame(
-            'typo3/cms-core',
-            $this->utility->getPackageName('typo3')
-        );
-
-        // Test specific case for defined php version
-        self::assertSame(
-            'php',
-            $this->utility->getPackageName('php')
-        );
-
-        // Test case if package name neither found on TER nor in mapping
-        self::assertSame(
-            'typo3-local/not-existing-extension',
-            $this->utility->getPackageName('not_existing_extension')
-        );
-    }
-
-    public function testConvertConstraint(): void
-    {
-        // Test extension not existing on packagist, force version *
-        self::assertEquals(
-            [
-            0 => 'typo3-local/naw-securedl',
-            1 => '*',
-        ],
-            $this->utility->convertConstraint('naw_securedl', '1')
-        );
-
-        // Test empty
-        self::assertEquals(
-            [
-                0 => 'typo3/cms-core',
-                1 => '*',
-            ],
-            $this->utility->convertConstraint('typo3', '')
-        );
-
-        // Test range between multiple versions
-        self::assertEquals(
-            [
-                0 => 'typo3/cms-core',
-                1 => '~7 || ~8 || ~9',
-            ],
-            $this->utility->convertConstraint('typo3', '7.0.0 - 9.4')
-        );
-
-        // Test single version
-        self::assertEquals(
-            [
-                0 => 'typo3/cms-core',
-                1 => '~7',
-            ],
-            $this->utility->convertConstraint('typo3', '7.0.0')
-        );
     }
 
     public function testLoadEmConf(): void
