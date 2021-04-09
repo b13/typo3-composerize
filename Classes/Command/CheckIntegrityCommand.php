@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace B13\Typo3Composerize\Command;
 
 use B13\Typo3Composerize\Utilities\ComposerConvertUtility;
+use B13\Typo3Composerize\Utilities\ComposerManifestCreator;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputInterface;
@@ -23,7 +24,7 @@ class CheckIntegrityCommand extends BaseComposerizeCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        list($extensions, $docRoot, $folders) = $this->getArguments($input);
+        [$extensions, $docRoot, $folders] = $this->getArguments($input);
 
         $utility = new ComposerConvertUtility($docRoot, $folders);
         $extensions = $utility->validateExtensions($extensions);
@@ -34,7 +35,7 @@ class CheckIntegrityCommand extends BaseComposerizeCommand
                 'ext-key' => $extension['ext-key'],
                 'composer-json' => $extension['composer-json'] ? '<fg=green>yes</>' : '<fg=red>no</>',
                 'extra-extension-key' => $extension['extra-extension-key'] ? '<fg=green>yes</>' : '<fg=red>no</>',
-                'package-name' => $extension['package-name'] ? $extension['package-name'] : '<fg=red>Preview: ' . ComposerConvertUtility::convertToPackageName($extension['ext-key']) . '</>',
+                'package-name' => $extension['package-name'] ? $extension['package-name'] : '<fg=red>Preview: ' . ComposerManifestCreator::getFallbackPackageNameFromExtensionKey($extension['ext-key']) . '</>',
             ];
         }
 

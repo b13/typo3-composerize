@@ -10,51 +10,7 @@ use Symfony\Component\Finder\Finder;
 
 class ComposerConvertUtility
 {
-    // TODO: Due to performance issues not used atm, loading only a local file see $this->terComposerMap
-    //const TER_URL = 'https://extensions.typo3.org/index.php?eID=ter_fe2:extension&action=findAllWithValidComposerName';
-
-    const CORE_EXTENSIONS = [
-        'php' => 'php',
-        'typo3' => 'typo3/cms-core',
-        'extbase' => 'typo3/cms-extbase',
-        'belog' => 'typo3/cms-belog',
-        'form' => 'typo3/cms-form',
-        'install' => 'typo3/cms-install',
-        'core' => 'typo3/cms-core',
-        'cms' => 'typo3/cms-core',
-        'frontend' => 'typo3/cms-frontend',
-        'felogin' => 'typo3/cms-felogin',
-        'setup' => 'typo3/cms-setup',
-        'impexp' => 'typo3/cms-impexp',
-        'fluid_styled_content' => 'typo3/cms-fluid-styled-content',
-        'backend' => 'typo3/cms-backend',
-        'fluid' => 'typo3/cms-fluid',
-        'tstemplate' => 'typo3/cms-tstemplate',
-        'info' => 'typo3/cms-info',
-        'dashboard' => 'typo3/cms-dashboard',
-        'extensionmanager' => 'typo3/cms-extensionmanager',
-        'filelist' => 'typo3/cms-filelist',
-        't3editor' => 'typo3/cms-t3editor',
-        'lowlevel' => 'typo3/cms-lowlevel',
-        'beuser' => 'typo3/cms-beuser',
-        'rte_ckeditor' => 'typo3/cms-rte-ckeditor',
-        'seo' => 'typo3/cms-seo',
-        'viewpage' => 'typo3/cms-viewpage',
-        'sys_note' => 'typo3/cms-sys-note',
-        'recordlist' => 'typo3/cms-recordlist',
-        'workspaces' => 'typo3/cms-workspaces',
-        'adminpanel' => 'typo3/cms-adminpanel',
-        'filemetadata' => 'typo3/cms-filemetadata',
-        'indexed_search' => 'typo3/cms-indexed-search',
-        'linkvalidator' => 'typo3/cms-linkvalidator',
-        'opendocs' => 'typo3/cms-opendocs',
-        'recycler' => 'typo3/cms-recycler',
-        'redirects' => 'typo3/cms-redirects',
-        'reports' => 'typo3/cms-reports',
-        'scheduler' => 'typo3/cms-scheduler',
-    ];
-
-    protected array $terComposerMap = [];
+    protected ComposerManifestCreator $manifestCreator;
     protected string $docRoot;
     protected array $folders;
 
@@ -62,7 +18,7 @@ class ComposerConvertUtility
 
     public function __construct(string $docRoot, $folders = ['typo3conf/ext/', 'typo3/sysext/'])
     {
-        $this->terComposerMap = json_decode(file_get_contents(__DIR__ . '/../../Static/typo3-ter-composer-map.json'), true);
+        $this->manifestCreator = new ComposerManifestCreator();
         $this->docRoot = $docRoot;
         $this->folders = $folders;
         $this->filesystem = new Filesystem();
@@ -128,41 +84,9 @@ class ComposerConvertUtility
         $extKey = basename($extPath);
         $emConf = $this->loadEmConf($extKey, $extPath);
 
-        $constraints = ['depends', 'suggests', 'conflicts'];
-        foreach ($constraints as $constraint) {
-            unset($$constraint);
-            if (!empty($emConf['constraints'][$constraint])) {
-                foreach ($emConf['constraints'][$constraint] as $key => $version) {
-                    list($currentKey, $currentVersion) = $this->convertConstraint($key, $version);
-                    $$constraint[$currentKey] = $currentVersion;
-                }
-            }
-        }
-
-        $packageName = $this->getPackageName($extKey);
-        $composerJson = [
-            'name' => $packageName,
-            'description' => $emConf['title'] . ' - ' . $emConf['description'],
-            'license' => 'GPL-2.0-or-later',
-            'type' => 'typo3-cms-extension',
-            'authors' => [
-                [
-                    'name' => $emConf['author'] ?? '',
-                    'email' => $emConf['author_email'] ?? 'no-email@given.com',
-                ]
-            ],
-            'require' => $depends ?? (object)null,
-            'suggest' => $suggests ?? (object)null,
-            'conflict' => $conflicts ?? (object)null,
-            'extra' => [
-                'typo3/cms' => [
-                    'extension-key' => $extKey,
-                ]
-            ],
-            'version' => 'dev-local',
-            'autoload' => [
-                'classmap' => $this->getExtensionClassMap($extPath),
-            ]
+        $composerJson = $this->manifestCreator->createComposerManifest($extKey, $emConf);
+        $composerJson['autoload'] = [
+            'classmap' => $this->getExtensionClassMap($extPath)
         ];
 
         $this->filesystem->filePutContentsIfModified($extPath . '/' . $resultFilename, json_encode($composerJson, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
@@ -192,58 +116,6 @@ class ComposerConvertUtility
     }
 
     /**
-     * Return Packagename
-     *
-     * @param string $extKey
-     * @return false|mixed
-     */
-    public function getPackageName(string $extKey)
-    {
-        if (!empty($this->terComposerMap['data'][$extKey]['composer_name'])) {
-            return $this->terComposerMap['data'][$extKey]['composer_name'];
-        }
-
-        if (!empty(self::CORE_EXTENSIONS[$extKey])) {
-            return self::CORE_EXTENSIONS[$extKey];
-        }
-
-        return self::convertToPackageName($extKey);
-    }
-
-    /**
-     * @param string $extKey
-     * @param string $versions
-     * @return array
-     */
-    public function convertConstraint(string $extKey, string $versions): array
-    {
-        $packageName = $this->getPackageName($extKey);
-
-        // Set * if package is empty or a local package
-        if (empty($versions) || preg_match('/^typo3-local\/(.*)/', $packageName)) {
-            return [ $packageName, '*'];
-        }
-
-        // TODO: Good or Bad? ... alternative would be `*` on all
-        $versionNumbers = [];
-        foreach (explode('-', $versions) as $version) {
-            $explodedVersion = explode('.', trim($version));
-            $versionNumbers[] = $explodedVersion[0];
-        }
-
-        $constraint = [];
-        if (count($versionNumbers) === 2) {
-            foreach (range($versionNumbers[0], $versionNumbers[1]) as $version) {
-                $constraint[] = '~' . $version;
-            }
-        } else {
-            $constraint[] = '~' . $versionNumbers[0];
-        }
-
-        return [ $packageName, implode(' || ', $constraint)];
-    }
-
-    /**
      * @return Finder
      */
     public function getExtensions(): Finder
@@ -256,15 +128,6 @@ class ComposerConvertUtility
         }
 
         return $finder;
-    }
-
-    /**
-     * @param string $extKey
-     * @return string
-     */
-    public static function convertToPackageName(string $extKey): string
-    {
-        return 'typo3-local/' . str_replace('_', '-', $extKey);
     }
 
     public function setExtensionKey($path, $extKey, $resultFilename = 'composer.json'): void
