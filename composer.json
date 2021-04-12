@@ -19,8 +19,8 @@
         }
     },
     "require": {
-        "symfony/console": "^5.2",
-        "symfony/finder": "^5.2",
+        "symfony/console": "^4.4 || ^5.2",
+        "symfony/finder": "^4.4 || ^5.2",
         "composer/composer": "^2.0",
       "ext-json": "*"
     },

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace B13\Typo3Composerize\Utilities;
@@ -67,8 +68,8 @@ class ExtensionKeyMap
 
     public function resolvePackageNameFromExtensionKey(string $extKey): ?string
     {
-        if (!empty($this->terComposerMap['data'][$extKey]['composer_name'])) {
-            return $this->terComposerMap['data'][$extKey]['composer_name'];
+        if (!empty($this->terComposerMap[$extKey]['composer_name'])) {
+            return $this->terComposerMap[$extKey]['composer_name'];
         }
 
         if (!empty(self::CORE_EXTENSIONS[$extKey])) {

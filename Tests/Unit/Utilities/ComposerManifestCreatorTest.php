@@ -1,15 +1,14 @@
 <?php
+
 declare(strict_types=1);
 
 namespace B13\Typo3Composerize\Tests\Unit\Command;
-
 
 use B13\Typo3Composerize\Utilities\ComposerManifestCreator;
 use PHPUnit\Framework\TestCase;
 
 class ComposerManifestCreatorTest extends TestCase
 {
-
     public function testConvertToPackageName(): void
     {
         self::assertSame(
@@ -73,7 +72,7 @@ class ComposerManifestCreatorTest extends TestCase
                 0 => 'typo3/cms-core',
                 1 => '~7 || ~8 || ~9',
             ],
-            $this->utility->convertConstraint('typo3', '7.0.0 - 9.4')
+            $subject->convertConstraint('typo3', '7.0.0 - 9.4')
         );
 
         // Test single version
@@ -82,7 +81,7 @@ class ComposerManifestCreatorTest extends TestCase
                 0 => 'typo3/cms-core',
                 1 => '~7',
             ],
-            $this->utility->convertConstraint('typo3', '7.0.0')
+            $subject->convertConstraint('typo3', '7.0.0')
         );
     }
 }
