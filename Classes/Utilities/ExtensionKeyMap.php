@@ -61,8 +61,8 @@ class ExtensionKeyMap
         if (is_array($mapData)) {
             $this->terComposerMap = $mapData;
         } else {
-            $terComposerMap = json_decode(file_get_contents(__DIR__ . '/../../Static/typo3-ter-composer-map.json'), true);
-            $this->terComposerMap = (array)($terComposerMap['data'] ?? []);
+            $terComposerMap = json_decode(file_get_contents('https://extensions.typo3.org/composerize'), true);
+            $this->terComposerMap = (array)($terComposerMap ?? []);
         }
     }
 
