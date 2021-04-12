@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace B13\Typo3Composerize\Utilities;
@@ -54,7 +55,6 @@ class ComposerManifestCreator
             ]
         ];
     }
-
 
     /**
      * @param string $extKey
