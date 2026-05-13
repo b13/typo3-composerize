@@ -51,7 +51,9 @@ class ComposerManifestCreator
             ],
             'version' => 'dev-local',
             'autoload' => [
-                'classmap' => ['*'],
+                'psr-4' => [
+                    '<<vendor>> \\ <<extension>> \\' => 'Classes/',
+                ],
             ]
         ];
     }
