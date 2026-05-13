@@ -40,7 +40,7 @@ jobs:
         run: vendor/bin/phpstan analyse --no-progress Classes/ Tests/Unit
 
       - name: PHP CS Fixer
-        run: vendor/bin/php-cs-fixer fix -v --dry-run --diff --using-cache false
+        run: vendor/bin/php-cs-fixer fix -v --dry-run --diff 
 
   test:
 
