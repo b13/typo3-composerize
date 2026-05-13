@@ -15,7 +15,7 @@ class ExtensionKeyMap
 
     protected array $terComposerMap = [];
 
-    const CORE_EXTENSIONS = [
+    public const CORE_EXTENSIONS = [
         'php' => 'php',
         'typo3' => 'typo3/cms-core',
         'extbase' => 'typo3/cms-extbase',
@@ -56,7 +56,7 @@ class ExtensionKeyMap
         'scheduler' => 'typo3/cms-scheduler',
     ];
 
-    public function __construct(array $mapData = null)
+    public function __construct(?array $mapData = null)
     {
         if (is_array($mapData)) {
             $this->terComposerMap = $mapData;

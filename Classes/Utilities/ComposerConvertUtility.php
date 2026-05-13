@@ -26,10 +26,6 @@ class ComposerConvertUtility
 
     /**
      * Validate extensions for composer compatibility
-     *
-     * @param array $checkExtensions
-     * @param string[] $folders
-     * @return array
      */
     public function validateExtensions(array $checkExtensions): array
     {
@@ -74,11 +70,6 @@ class ComposerConvertUtility
         return $extensions;
     }
 
-    /**
-     * @param string $extPath
-     * @param string $resultFilename
-     * @return string
-     */
     public function convertEmconfToComposer(string $extPath, $resultFilename = 'composer.json'): string
     {
         $extKey = basename($extPath);
@@ -86,7 +77,7 @@ class ComposerConvertUtility
 
         $composerJson = $this->manifestCreator->createComposerManifest($extKey, $emConf);
         $composerJson['autoload'] = [
-            'classmap' => $this->getExtensionClassMap($extPath)
+            'classmap' => $this->getExtensionClassMap($extPath),
         ];
 
         $this->filesystem->filePutContentsIfModified($extPath . '/' . $resultFilename, json_encode($composerJson, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
@@ -97,8 +88,6 @@ class ComposerConvertUtility
     /**
      * Returns $EM_CONF array
      *
-     * @param string $extensionKey
-     * @param string $absolutePath
      * @return array|false
      */
     public function loadEmConf(string $extensionKey, string $absolutePath)
@@ -115,9 +104,6 @@ class ComposerConvertUtility
         return false;
     }
 
-    /**
-     * @return Finder
-     */
     public function getExtensions(): Finder
     {
         $finder = Finder::create();
@@ -139,10 +125,6 @@ class ComposerConvertUtility
         $this->filesystem->filePutContentsIfModified($path . '/' . $resultFilename, json_encode($json, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . PHP_EOL);
     }
 
-    /**
-     * @param string $extPath
-     * @return array
-     */
     public function getExtensionClassMap(string $extPath): array
     {
         $classMap = ClassMapGenerator::createMap($extPath);

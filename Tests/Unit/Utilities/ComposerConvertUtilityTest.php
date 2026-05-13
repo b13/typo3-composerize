@@ -9,8 +9,8 @@ use PHPUnit\Framework\TestCase;
 
 final class ComposerConvertUtilityTest extends TestCase
 {
-    const UPDATED_JSON_FILE = 'composer_ext_key.json';
-    const EMCONF_CONVERTED_JSON_FILE = 'emconf-converted.json';
+    public const UPDATED_JSON_FILE = 'composer_ext_key.json';
+    public const EMCONF_CONVERTED_JSON_FILE = 'emconf-converted.json';
 
     protected string $extensionPath;
     protected ComposerConvertUtility $utility;
@@ -59,7 +59,7 @@ final class ComposerConvertUtilityTest extends TestCase
         self::assertEquals([
             'typo3/cms-core' => '~8 || ~9 || ~10',
             'typo3/cms-beuser' => '*',
-            'php' => '~7'
+            'php' => '~7',
         ], $composerJson['require']);
 
         self::assertEquals('sample_extension', $composerJson['extra']['typo3/cms']['extension-key']);
@@ -94,15 +94,15 @@ final class ComposerConvertUtilityTest extends TestCase
                 'depends' => [
                     'typo3' => '8.5.0-10.4.99',
                     'beuser' => '',
-                    'php' => '7.2.0-7.4.99'
+                    'php' => '7.2.0-7.4.99',
                 ],
                 'conflicts' => [
                     'news' => '8.2.5',
                 ],
                 'suggests' => [
                     'workspaces' => '',
-                ]
-            ]
+                ],
+            ],
         ];
     }
 
@@ -117,11 +117,11 @@ final class ComposerConvertUtilityTest extends TestCase
 
     public function tearDown(): void
     {
-        if ($this->getName() === 'testSetExtensionKey') {
+        if ($this->name() === 'testSetExtensionKey') {
             @unlink($this->extensionPath . '/' . self::UPDATED_JSON_FILE);
         }
 
-        if ($this->getName() === 'testConvertEmconfToComposer') {
+        if ($this->name() === 'testConvertEmconfToComposer') {
             @unlink($this->extensionPath . '/' . self::EMCONF_CONVERTED_JSON_FILE);
         }
 

@@ -10,9 +10,9 @@ namespace B13\Typo3Composerize\Utilities;
 class ComposerManifestCreator
 {
     protected ExtensionKeyMap $extensionKeyMap;
-    const FALLBACK_VENDOR = 'typo3-local';
+    public const FALLBACK_VENDOR = 'typo3-local';
 
-    public function __construct(ExtensionKeyMap $map = null)
+    public function __construct(?ExtensionKeyMap $map = null)
     {
         $this->extensionKeyMap = $map ?? new ExtensionKeyMap();
     }
@@ -39,7 +39,7 @@ class ComposerManifestCreator
                 [
                     'name' => $emConf['author'] ?? '',
                     'email' => $emConf['author_email'] ?? 'no-email@given.com',
-                ]
+                ],
             ],
             'require' => $depends ?? (object)null,
             'suggest' => $suggests ?? (object)null,
@@ -47,14 +47,14 @@ class ComposerManifestCreator
             'extra' => [
                 'typo3/cms' => [
                     'extension-key' => $extensionKey,
-                ]
+                ],
             ],
             'version' => 'dev-local',
             'autoload' => [
                 'psr-4' => [
                     '<<vendor>> \\ <<extension>> \\' => 'Classes/',
                 ],
-            ]
+            ],
         ];
     }
 

@@ -6,23 +6,23 @@ namespace B13\Typo3Composerize\Command;
 
 use B13\Typo3Composerize\Utilities\ComposerConvertUtility;
 use B13\Typo3Composerize\Utilities\ComposerManifestCreator;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+#[AsCommand(name: 'check')]
 class CheckIntegrityCommand extends BaseComposerizeCommand
 {
-    protected static $defaultName = 'check';
-
-    protected function configure()
+    protected function configure(): void
     {
         parent::configure();
         $this->setDescription('Check TYPO3 extensions for composer compatibility.')
             ->setHelp('Check TYPO3 extensions for composer compatibility.');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         [$extensions, $docRoot, $folders] = $this->getArguments($input);
 

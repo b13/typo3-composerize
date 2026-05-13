@@ -6,6 +6,7 @@ namespace B13\Typo3Composerize\Command;
 
 use B13\Typo3Composerize\Utilities\ComposerConvertUtility;
 use Composer\Console\Application;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputInterface;
@@ -13,11 +14,10 @@ use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Filesystem\Exception\IOException;
 
+#[AsCommand(name: 'create')]
 class CreateComposerCommand extends BaseComposerizeCommand
 {
-    protected static $defaultName = 'create';
-
-    protected function configure()
+    protected function configure(): void
     {
         parent::configure();
         $this->setDescription('Create composer.json')
@@ -26,7 +26,7 @@ class CreateComposerCommand extends BaseComposerizeCommand
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        list($extensions, $docRoot, $folders) = $this->getArguments($input);
+        [$extensions, $docRoot, $folders] = $this->getArguments($input);
         $utility = new ComposerConvertUtility($docRoot, $folders);
         $extensions = $utility->validateExtensions($extensions);
 
